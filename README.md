@@ -90,3 +90,28 @@ python -m pytest -q
 interactive dashboard; `data/` holds the blank template; `tests/` covers arithmetic,
 invalid inputs, missing values, and dashboard rendering. Numerical fixtures in
 tests are explicitly synthetic and are not ANET financial data.
+
+### Local 2025 Form 10-K verification extension
+
+Select **Verified local 2025 Form 10-K** to load reviewed 2023–2025 figures from
+`data/verified_2023_2025.csv`. The existing workbook and user-attested CSV modes
+remain available with their original behavior; the earlier unverified descriptions
+above apply to the workbook mode. No workbook or blank template was changed.
+
+The local PDF has **107 pages**. Income figures were checked against PDF p.73
+(printed p.69), cash flows against PDF p.76 (printed p.72). Verification is against
+the local document only, without outside authentication. See
+[the reconciliation report](docs/reconciliation_2023_2025.md) and its
+[CSV](docs/reconciliation_2023_2025.csv) for Excel cells, SEC values, differences,
+units, missing data, and page references. The report compares cached Excel results;
+the existing loader separately checks their formulas and recomputation.
+
+**FCF after property, equipment and intangible purchases** = operating cash flow
+minus the absolute value of that combined purchase line. Its margin divides this
+FCF by revenue. This is a derived non-GAAP measure that includes intangibles,
+not traditional PP&E-only FCF. Signed purchases are retained in the source CSV;
+the internal compatibility field `capital_expenditures` contains their absolute
+outflow in this mode. Exports include the definition and source references.
+The full 2023 balance sheet is unavailable; 2024–2025 balance sheets are present on
+PDF p.72 but were not reconciled in this extension. Missing figures remain blank.
+Tests now also include regression checks against locally reviewed ANET figures.

@@ -1,0 +1,49 @@
+fiscal_year,metric,excel_cell,excel_value,sec_value,difference,units,status,pdf_reference,basis
+2023,product_revenue,Historical Financials!B2,5029.5,5029.5,0.0,USD millions,MATCH,PDF p.73 (printed p.69),Reported SEC amount
+2023,service_revenue,Historical Financials!B3,830.7,830.7,0.0,USD millions,MATCH,PDF p.73 (printed p.69),Reported SEC amount
+2023,revenue,Historical Financials!B4,5860.2,5860.2,0.0,USD millions,MATCH,PDF p.73 (printed p.69),Reported SEC amount
+2023,revenue_growth_yoy,Historical Financials!B5,,,,fraction,MISSING / NOT COMPARABLE,PDF p.73 (printed p.69),Derived from SEC amounts
+2023,cost_of_revenue,Historical Financials!B6,2229.9,2229.9,0.0,USD millions,MATCH,PDF p.73 (printed p.69),Reported SEC amount
+2023,gross_profit,Historical Financials!B7,3630.2999999999997,3630.3,-4.547473508864641e-13,USD millions,MATCH,PDF p.73 (printed p.69),Reported SEC amount
+2023,gross_profit_margin,Historical Financials!B8,0.6194839766560868,0.6194839766560869,-1.1102230246251565e-16,fraction,MATCH,PDF p.73 (printed p.69),Derived from SEC amounts
+2023,operating_expenses,Historical Financials!B9,1373.0,1373.0,0.0,USD millions,MATCH,PDF p.73 (printed p.69),Reported SEC amount
+2023,operating_income,Historical Financials!B10,2257.2999999999997,2257.3,-4.547473508864641e-13,USD millions,MATCH,PDF p.73 (printed p.69),Reported SEC amount
+2023,operating_profit_margin,Historical Financials!B11,0.3851916316849254,0.3851916316849255,-1.1102230246251565e-16,fraction,MATCH,PDF p.73 (printed p.69),Derived from SEC amounts
+2023,net_income,Historical Financials!B12,2087.3,2087.3,0.0,USD millions,MATCH,PDF p.73 (printed p.69),Reported SEC amount
+2023,net_profit_margin,Historical Financials!B13,0.3561823828538276,0.3561823828538276,0.0,fraction,MATCH,PDF p.73 (printed p.69),Derived from SEC amounts
+2023,operating_cash_flow,Not present,,2034.0,,USD millions,MISSING IN EXCEL,PDF p.76 (printed p.72),Reported SEC amount
+2023,property_equipment_intangible_purchases,Not present,,-34.4,,USD millions,MISSING IN EXCEL,PDF p.76 (printed p.72),Reported SEC amount
+2023,free_cash_flow,Not present,,1999.6,,USD millions,MISSING IN EXCEL,PDF p.76 (printed p.72),"Derived: FCF after property, equipment and intangible purchases"
+2023,free_cash_flow_margin,Not present,,0.34121702330978465,,fraction,MISSING IN EXCEL,PDF p.76 (printed p.72); p.73 revenue,"Derived: FCF after property, equipment and intangible purchases"
+2024,product_revenue,Historical Financials!C2,5884.0,5884.0,0.0,USD millions,MATCH,PDF p.73 (printed p.69),Reported SEC amount
+2024,service_revenue,Historical Financials!C3,1119.1,1119.1,0.0,USD millions,MATCH,PDF p.73 (printed p.69),Reported SEC amount
+2024,revenue,Historical Financials!C4,7003.1,7003.1,0.0,USD millions,MATCH,PDF p.73 (printed p.69),Reported SEC amount
+2024,revenue_growth_yoy,Historical Financials!C5,0.19502747346506966,0.19502747346506966,0.0,fraction,MATCH,PDF p.73 (printed p.69),Derived from SEC amounts
+2024,cost_of_revenue,Historical Financials!C6,2511.8,2511.8,0.0,USD millions,MATCH,PDF p.73 (printed p.69),Reported SEC amount
+2024,gross_profit,Historical Financials!C7,4491.3,4491.3,0.0,USD millions,MATCH,PDF p.73 (printed p.69),Reported SEC amount
+2024,gross_profit_margin,Historical Financials!C8,0.6413302680241607,0.6413302680241607,0.0,fraction,MATCH,PDF p.73 (printed p.69),Derived from SEC amounts
+2024,operating_expenses,Historical Financials!C9,1546.7,1546.7,0.0,USD millions,MATCH,PDF p.73 (printed p.69),Reported SEC amount
+2024,operating_income,Historical Financials!C10,2944.6000000000004,2944.6,4.547473508864641e-13,USD millions,MATCH,PDF p.73 (printed p.69),Reported SEC amount
+2024,operating_profit_margin,Historical Financials!C11,0.42047093430052407,0.420470934300524,5.551115123125783e-17,fraction,MATCH,PDF p.73 (printed p.69),Derived from SEC amounts
+2024,net_income,Historical Financials!C12,2852.1,2852.1,0.0,USD millions,MATCH,PDF p.73 (printed p.69),Reported SEC amount
+2024,net_profit_margin,Historical Financials!C13,0.40726249803658376,0.40726249803658376,0.0,fraction,MATCH,PDF p.73 (printed p.69),Derived from SEC amounts
+2024,operating_cash_flow,Not present,,3708.2,,USD millions,MISSING IN EXCEL,PDF p.76 (printed p.72),Reported SEC amount
+2024,property_equipment_intangible_purchases,Not present,,-32.0,,USD millions,MISSING IN EXCEL,PDF p.76 (printed p.72),Reported SEC amount
+2024,free_cash_flow,Not present,,3676.2,,USD millions,MISSING IN EXCEL,PDF p.76 (printed p.72),"Derived: FCF after property, equipment and intangible purchases"
+2024,free_cash_flow_margin,Not present,,0.5249389556053747,,fraction,MISSING IN EXCEL,PDF p.76 (printed p.72); p.73 revenue,"Derived: FCF after property, equipment and intangible purchases"
+2025,product_revenue,Historical Financials!D2,7576.9,7576.9,0.0,USD millions,MATCH,PDF p.73 (printed p.69),Reported SEC amount
+2025,service_revenue,Historical Financials!D3,1428.8,1428.8,0.0,USD millions,MATCH,PDF p.73 (printed p.69),Reported SEC amount
+2025,revenue,Historical Financials!D4,9005.699999999999,9005.7,-1.8189894035458565e-12,USD millions,MATCH,PDF p.73 (printed p.69),Reported SEC amount
+2025,revenue_growth_yoy,Historical Financials!D5,0.2859590752666674,0.28595907526666764,-2.220446049250313e-16,fraction,MATCH,PDF p.73 (printed p.69),Derived from SEC amounts
+2025,cost_of_revenue,Historical Financials!D6,3237.0,3237.0,0.0,USD millions,MATCH,PDF p.73 (printed p.69),Reported SEC amount
+2025,gross_profit,Historical Financials!D7,5768.699999999999,5768.7,-9.094947017729282e-13,USD millions,MATCH,PDF p.73 (printed p.69),Reported SEC amount
+2025,gross_profit_margin,Historical Financials!D8,0.6405609780472367,0.6405609780472367,0.0,fraction,MATCH,PDF p.73 (printed p.69),Derived from SEC amounts
+2025,operating_expenses,Historical Financials!D9,1912.6,1912.6,0.0,USD millions,MATCH,PDF p.73 (printed p.69),Reported SEC amount
+2025,operating_income,Historical Financials!D10,3856.099999999999,3856.1,-9.094947017729282e-13,USD millions,MATCH,PDF p.73 (printed p.69),Reported SEC amount
+2025,operating_profit_margin,Historical Financials!D11,0.4281843721198796,0.4281843721198796,0.0,fraction,MATCH,PDF p.73 (printed p.69),Derived from SEC amounts
+2025,net_income,Historical Financials!D12,3511.4,3511.4,0.0,USD millions,MATCH,PDF p.73 (printed p.69),Reported SEC amount
+2025,net_profit_margin,Historical Financials!D13,0.38990861343371425,0.3899086134337142,5.551115123125783e-17,fraction,MATCH,PDF p.73 (printed p.69),Derived from SEC amounts
+2025,operating_cash_flow,Not present,,4371.9,,USD millions,MISSING IN EXCEL,PDF p.76 (printed p.72),Reported SEC amount
+2025,property_equipment_intangible_purchases,Not present,,-119.5,,USD millions,MISSING IN EXCEL,PDF p.76 (printed p.72),Reported SEC amount
+2025,free_cash_flow,Not present,,4252.4,,USD millions,MISSING IN EXCEL,PDF p.76 (printed p.72),"Derived: FCF after property, equipment and intangible purchases"
+2025,free_cash_flow_margin,Not present,,0.4721898353265154,,fraction,MISSING IN EXCEL,PDF p.76 (printed p.72); p.73 revenue,"Derived: FCF after property, equipment and intangible purchases"
