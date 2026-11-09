@@ -1,15 +1,25 @@
 # ANET-Equity-Research
-Equity research and financial analysis of Arista Networks (ANET), including valuation models and a Python dashboard.
+An equity research portfolio on Arista Networks (NYSE: ANET), combining an **8-page research report**, SEC-verified historical analysis, a Python/Streamlit dashboard, and a reproducible FCFF DCF with Base/Bull/Bear scenarios and WACC/terminal-growth sensitivity analysis.
 
-## Financial analysis dashboard (v1)
+## Portfolio research report
 
-An annual statement analysis tool built with Python, pandas, Plotly and Streamlit.
-The template deliberately contains headers only: no ANET financial figures or
-investment recommendations are supplied. Valuation models are not implemented in v1.
+**[Read the 8-page Equity Research & Scenario-Based DCF Valuation report](reports/ANET_Equity_Research_2026-11-08.pdf)** — by Ya-Cheng Hsieh (Erica Hsieh), research date November 8, 2026. Sourced ANET financial analysis, preliminary investment hypotheses, driver-based FCFF scenarios and sensitivity analysis demonstrate a reproducible equity research workflow. All scenario valuations are hypothetical; equity/per-share valuation remains **BLOCKED**, with no recommendation or price target.
+
+[Editable report source](reports/anet_equity_research.md) · [Build and validation instructions](reports/README.md)
+
+## Financial analysis dashboard
+
+Built with Python, pandas, Plotly and Streamlit, the dashboard supports original
+Excel analysis, user-attested CSV uploads, SEC-reviewed FY2023–FY2025 financials,
+and Q3/9M2026 comparisons with additive TTM income analysis. The original v1
+started as an annual CSV analysis tool with a headers-only template; that template
+is still blank, while reviewed ANET data now resides in separate source files.
+The current portfolio also includes the written report and standalone FCFF DCF
+described below; the DCF is not a dashboard feature.
 
 ### Existing Excel model integration
 
-The default dashboard now reads the user's supplied
+The default **Excel mode** reads the user's supplied
 `data/source/ANET_Financial Model.xlsx` in read-only fashion. Its historical figures
 and every derived ratio are **UNVERIFIED**: the workbook has no SEC citations.
 The blank CSV template remains unchanged. Select **Verified CSV** in the sidebar
@@ -26,7 +36,7 @@ differences are flagged. `=+C10/C4` is equivalent to `=C10/C4`.
 The dashboard includes the original worksheet's cached values, cell-level formula
 audit, charts, historical ratios, and exports carrying an unverified status and
 worksheet references. SEC verification remains separate from arithmetic checks.
-Cash flow and capex are absent, so FCF and FCF margin stay blank. The first year's
+In Excel mode, cash flow and capex are absent, so FCF and FCF margin stay blank. The first year's
 YoY stays blank because 2022 revenue is absent. See `docs/workbook_review.md`.
 
 ### Run locally
@@ -43,7 +53,7 @@ python -m streamlit run app.py
 Streamlit prints the local dashboard address. Stop with Ctrl+C.
 No API keys, financial data downloads, or external services are required.
 
-### Prepare verified annual data
+### Upload your own annual CSV
 
 Copy `data/annual_financials_template.csv` to your own file, add annual rows, and
 upload through the dashboard. Preserve the original blank template.
@@ -86,10 +96,13 @@ display, while YoY uses the complete uploaded history.
 python -m pytest -q
 ```
 
-`anet_research/financials.py` contains validation and calculations; `app.py` is the
-interactive dashboard; `data/` holds the blank template; `tests/` covers arithmetic,
-invalid inputs, missing values, and dashboard rendering. Numerical fixtures in
-tests are explicitly synthetic and are not ANET financial data.
+`anet_research/financials.py` contains annual validation and calculations; `app.py`
+is the interactive dashboard. `data/` holds the original template, workbooks,
+reviewed financial data and model inputs; `model_outputs/` holds reproducible
+valuation tables; `reports/` holds the PDF and editable report source. Tests cover
+synthetic calculation cases, reviewed ANET data, provenance, missing values,
+dashboard rendering and valuation controls. Install `requirements-report.txt`
+to include the optional PDF-generation and report-validation tests.
 
 ### Local 2025 Form 10-K verification extension
 
@@ -98,9 +111,12 @@ Select **Verified local 2025 Form 10-K** to load reviewed 2023–2025 figures fr
 remain available with their original behavior; the earlier unverified descriptions
 above apply to the workbook mode. No workbook or blank template was changed.
 
-The local PDF has **107 pages**. Income figures were checked against PDF p.73
-(printed p.69), cash flows against PDF p.76 (printed p.72). Verification is against
-the local document only, without outside authentication. See
+The local PDF has **107 pages**. The initial reconciliation checked income against
+PDF p.73 (printed p.69) and cash flows against PDF p.76 (printed p.72). Subsequent
+research and valuation reviews cross-checked the annual statements against the
+official SEC filing; see the source register in the [research draft](docs/investment_thesis.md)
+and [valuation evidence review](docs/valuation_evidence_review.md). These project
+checks are not an independent audit. See
 [the reconciliation report](docs/reconciliation_2023_2025.md) and its
 [CSV](docs/reconciliation_2023_2025.csv) for Excel cells, SEC values, differences,
 units, missing data, and page references. The report compares cached Excel results;
@@ -113,7 +129,8 @@ not traditional PP&E-only FCF. Signed purchases are retained in the source CSV;
 the internal compatibility field `capital_expenditures` contains their absolute
 outflow in this mode. Exports include the definition and source references.
 The full 2023 balance sheet is unavailable; 2024–2025 balance sheets are present on
-PDF p.72 but were not reconciled in this extension. Missing figures remain blank.
+PDF p.72 but were not reconciled in the initial annual dashboard extension;
+the later valuation evidence review derives selected balance-sheet/NWC proxies. Missing figures remain blank.
 Tests now also include regression checks against locally reviewed ANET figures.
 
 ### Q3 / 9M 2026 Form 10-Q and TTM income
@@ -176,8 +193,10 @@ The annual cash purchase line includes intangibles; interim purchases are PP&E-o
 The model uses a separate hypothetical intangible reinvestment budget and never
 splices the existing FCF series. Taxes and operating NWC classification remain
 modeled. TTM FCF and TTM EPS remain unavailable. Equity and per-share outputs are
-blocked until the missing dated cash/investment, debt/claims and diluted-share
-inputs in `data/valuation/equity_bridge.json` are validated. No current price is supplied.
+**BLOCKED** until excess-liquidity allocation, investment/nonoperating-asset
+adjustments, aggregate debt/claims and point-in-time diluted-share inputs in
+`data/valuation/equity_bridge.json` are supported. Reported cash and securities
+are verified, but are not automatically excess liquidity. No current price is supplied.
 
 ### DCF evidence and bridge review (PR #4 follow-up)
 
@@ -190,4 +209,5 @@ rates and enterprise values are unchanged; they are still hypothetical.
 Equity/per-share output remains **BLOCKED** until operating liquidity, investment
 adjustments, other nonoperating assets, aggregate claims and point-in-time dilution are supported. No
 weighted-average EPS denominator is automatically accepted. No dashboard or
-protected historical input was changed. The full suite currently passes 87 tests.
+protected historical input was changed by that review. With report dependencies
+installed, the full suite passes **90 tests**, including three PDF/report tests.
