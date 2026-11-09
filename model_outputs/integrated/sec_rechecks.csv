@@ -1,0 +1,33 @@
+metric,source_label,period,value,units,source_url,source_reference,status,repository_value,difference,check
+revenue,Total revenue,FY2025,9005.7,USD millions,https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm,Item 8 printed p.69,DIRECT_SEC_RECHECK,9005.7,0,PASS
+revenue,Total revenue,FY2024,7003.1,USD millions,https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm,Item 8 printed p.69,DIRECT_SEC_RECHECK,7003.1,0,PASS
+revenue,Total revenue,FY2023,5860.2,USD millions,https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm,Item 8 printed p.69,DIRECT_SEC_RECHECK,5860.2,0,PASS
+cost_of_revenue,Total cost of revenue,FY2025,3237,USD millions,https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm,Item 8 printed p.69,DIRECT_SEC_RECHECK,3237,0,PASS
+cost_of_revenue,Total cost of revenue,FY2024,2511.8,USD millions,https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm,Item 8 printed p.69,DIRECT_SEC_RECHECK,2511.8,0,PASS
+cost_of_revenue,Total cost of revenue,FY2023,2229.9,USD millions,https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm,Item 8 printed p.69,DIRECT_SEC_RECHECK,2229.9,0,PASS
+gross_profit,Gross profit,FY2025,5768.7,USD millions,https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm,Item 8 printed p.69,DIRECT_SEC_RECHECK,5768.7,0,PASS
+gross_profit,Gross profit,FY2024,4491.3,USD millions,https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm,Item 8 printed p.69,DIRECT_SEC_RECHECK,4491.3,0,PASS
+gross_profit,Gross profit,FY2023,3630.3,USD millions,https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm,Item 8 printed p.69,DIRECT_SEC_RECHECK,3630.3,0,PASS
+operating_expenses,Total operating expenses,FY2025,1912.6,USD millions,https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm,Item 8 printed p.69,DIRECT_SEC_RECHECK,1912.6,0,PASS
+operating_expenses,Total operating expenses,FY2024,1546.7,USD millions,https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm,Item 8 printed p.69,DIRECT_SEC_RECHECK,1546.7,0,PASS
+operating_expenses,Total operating expenses,FY2023,1373,USD millions,https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm,Item 8 printed p.69,DIRECT_SEC_RECHECK,1373,0,PASS
+operating_income,Income from operations,FY2025,3856.1,USD millions,https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm,Item 8 printed p.69,DIRECT_SEC_RECHECK,3856.1,0,PASS
+operating_income,Income from operations,FY2024,2944.6,USD millions,https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm,Item 8 printed p.69,DIRECT_SEC_RECHECK,2944.6,0,PASS
+operating_income,Income from operations,FY2023,2257.3,USD millions,https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm,Item 8 printed p.69,DIRECT_SEC_RECHECK,2257.3,0,PASS
+net_income,Net income,FY2025,3511.4,USD millions,https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm,Item 8 printed p.69,DIRECT_SEC_RECHECK,3511.4,0,PASS
+net_income,Net income,FY2024,2852.1,USD millions,https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm,Item 8 printed p.69,DIRECT_SEC_RECHECK,2852.1,0,PASS
+net_income,Net income,FY2023,2087.3,USD millions,https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm,Item 8 printed p.69,DIRECT_SEC_RECHECK,2087.3,0,PASS
+operating_cash_flow,Net cash provided by operating activities,FY2025,4371.9,USD millions,https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm,Item 8 printed p.72,DIRECT_SEC_RECHECK,4371.9,0,PASS
+operating_cash_flow,Net cash provided by operating activities,FY2024,3708.2,USD millions,https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm,Item 8 printed p.72,DIRECT_SEC_RECHECK,3708.2,0,PASS
+operating_cash_flow,Net cash provided by operating activities,FY2023,2034,USD millions,https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm,Item 8 printed p.72,DIRECT_SEC_RECHECK,2034,0,PASS
+property_equipment_intangible_purchases,"Purchases of property, equipment and intangible assets",FY2025,-119.5,USD millions,https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm,Item 8 printed p.72,DIRECT_SEC_RECHECK,-119.5,0,PASS
+property_equipment_intangible_purchases,"Purchases of property, equipment and intangible assets",FY2024,-32,USD millions,https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm,Item 8 printed p.72,DIRECT_SEC_RECHECK,-32,0,PASS
+property_equipment_intangible_purchases,"Purchases of property, equipment and intangible assets",FY2023,-34.4,USD millions,https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm,Item 8 printed p.72,DIRECT_SEC_RECHECK,-34.4,0,PASS
+revenue,,Q3 2026,3657.6,USD millions,https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/anet-20260930.htm,Part I Item 1 p.2; cash flow p.5,DIRECT_SEC_RECHECK,3657.6,0,PASS
+revenue,,Q3 2025,2308.3,USD millions,https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/anet-20260930.htm,Part I Item 1 p.2; cash flow p.5,DIRECT_SEC_RECHECK,2308.3,0,PASS
+revenue,,9M 2026,9402.3,USD millions,https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/anet-20260930.htm,Part I Item 1 p.2; cash flow p.5,DIRECT_SEC_RECHECK,9402.3,0,PASS
+revenue,,9M 2025,6517.9,USD millions,https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/anet-20260930.htm,Part I Item 1 p.2; cash flow p.5,DIRECT_SEC_RECHECK,6517.9,0,PASS
+net_income,,Q3 2026,1560.4,USD millions,https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/anet-20260930.htm,Part I Item 1 p.2; cash flow p.5,DIRECT_SEC_RECHECK,1560.4,0,PASS
+net_income,,Q3 2025,853,USD millions,https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/anet-20260930.htm,Part I Item 1 p.2; cash flow p.5,DIRECT_SEC_RECHECK,853,0,PASS
+net_income,,9M 2026,3796.2,USD millions,https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/anet-20260930.htm,Part I Item 1 p.2; cash flow p.5,DIRECT_SEC_RECHECK,3796.2,0,PASS
+net_income,,9M 2025,2555.6,USD millions,https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/anet-20260930.htm,Part I Item 1 p.2; cash flow p.5,DIRECT_SEC_RECHECK,2555.6,0,PASS

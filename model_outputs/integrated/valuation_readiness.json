@@ -1,0 +1,67 @@
+{
+  "equity_bridge_status": "BLOCKED",
+  "dilution": {
+    "status": "BLOCKED",
+    "basic_shares": 1263.4,
+    "diluted_shares": null,
+    "reasons": [
+      "Award/option/ESPP population completeness not established.",
+      "unvested_RSU_population: Missing same-date award terms, price, vesting/proceeds or SBC service-cost policy."
+    ],
+    "awards": [
+      {
+        "id": "unvested_RSU_population",
+        "count": 24.3,
+        "incremental_shares": null,
+        "status": "BLOCKED",
+        "reason": "Missing same-date award terms, price, vesting/proceeds or SBC service-cost policy."
+      }
+    ]
+  },
+  "target_rating": {
+    "status": "BLOCKED",
+    "target": null,
+    "upside_downside": null,
+    "rating": "NOT RATED",
+    "reasons": [
+      "supported_operating_assumptions",
+      "supported_wacc_terminal_economics",
+      "verified_equity_bridge",
+      "point_in_time_dilution",
+      "forward_12m_revaluation",
+      "dated_price_alignment",
+      "documented_rating_thresholds",
+      "supported 12-month target and reference price",
+      "explicit analyst rating policy thresholds"
+    ]
+  },
+  "price_reference": {
+    "date": "2026-11-06",
+    "time": "16:00:00",
+    "timezone": "America/New_York",
+    "value": 170.8,
+    "units": "USD/share",
+    "validated": true,
+    "sources": [
+      {
+        "url": "https://stockanalysis.com/stocks/anet/history/",
+        "section": "Historical Data, Close column",
+        "excerpt": "2026-11-06: Close 170.80; Adj. Close 170.80"
+      },
+      {
+        "url": "https://chartexchange.com/symbol/nyse-anet/historical/",
+        "section": "ANET Historical Prices, Close column",
+        "excerpt": "2026-11-06: Close 170.80"
+      }
+    ]
+  },
+  "scenario_policy": "Original EVs unchanged; no new operating/discount assumptions introduced.",
+  "blocker_summary": {
+    "equity_bridge": "Operating liquidity reserve/investment adjustments, 899.2 other assets eligibility and aggregate 296.4/358.1 liability classifications unresolved.",
+    "diluted_shares": "Complete options/ESPP/award population, vesting/performance terms, proceeds and remaining-service/SBC economic policy unresolved; EPS averages excluded.",
+    "operating_assumptions": "Growth, margins, normalized operating taxes, D&A, intangible investment and economic NWC/target ratios remain hypothetical.",
+    "discount_terminal": "No validated dated WACC component package or sustainable terminal reinvestment/return rationale.",
+    "twelve_month_target": "No supported horizon-specific revaluation or future cash/claims/share schedule; rating thresholds unset.",
+    "peer_cross_check": "No verified common-date peer market EVs, calendarized TTM EBITDA/revenue or dated NTM EPS."
+  }
+}

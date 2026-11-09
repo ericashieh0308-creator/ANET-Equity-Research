@@ -1,0 +1,51 @@
+{
+  "ticker": "ANET",
+  "currency": "USD",
+  "price_type": "regular_session_close",
+  "status": "CORROBORATED_HISTORICAL_CLOSE",
+  "retrieved_date": "2026-11-08",
+  "retrieved_timezone": "America/New_York",
+  "observations": [
+    {
+      "date": "2026-09-30",
+      "time": "16:00:00",
+      "timezone": "America/New_York",
+      "value": 203.59,
+      "units": "USD/share",
+      "validated": true,
+      "sources": [
+        {
+          "url": "https://stockanalysis.com/stocks/anet/history/",
+          "section": "Historical Data, Close column",
+          "excerpt": "2026-09-30: Close 203.59; Adj. Close 203.59"
+        },
+        {
+          "url": "https://chartexchange.com/symbol/nyse-anet/historical/",
+          "section": "ANET Historical Prices, Close column",
+          "excerpt": "2026-09-30: Close 203.59"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-06",
+      "time": "16:00:00",
+      "timezone": "America/New_York",
+      "value": 170.8,
+      "units": "USD/share",
+      "validated": true,
+      "sources": [
+        {
+          "url": "https://stockanalysis.com/stocks/anet/history/",
+          "section": "Historical Data, Close column",
+          "excerpt": "2026-11-06: Close 170.80; Adj. Close 170.80"
+        },
+        {
+          "url": "https://chartexchange.com/symbol/nyse-anet/historical/",
+          "section": "ANET Historical Prices, Close column",
+          "excerpt": "2026-11-06: Close 170.80"
+        }
+      ]
+    }
+  ],
+  "exclusions": "Use historical table Close, not ChartExchange last-trade banner 170.74, after-hours quotes, search snippets or tool market-cap/PE ratios. Official IR rendered page loaded no numeric quote. No official-exchange feed certification claimed. September close is retrospective context; November close must not be used as September award price."
+}
