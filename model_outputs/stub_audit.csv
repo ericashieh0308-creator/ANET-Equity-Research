@@ -1,0 +1,4 @@
+scenario,status,modeled_9m_nopat,modeled_9m_intangible_budget,derived_9m_nwc_change,modeled_9m_fcff_NOT_ACTUAL,annual_forecast_fcff,q4_only_dcf_fcff,reconciliation_residual,check_status,note
+Base,HYPOTHETICAL / NOT YET VALIDATED,3258.996,47.0115,783.8,2313.5845,3269.644808,956.060308,0,PASS,9M tax/intangible/NWC economics modeled; only Q4 cash included at t=0.25; no SBC add-back or lease capitalization
+Bull,HYPOTHETICAL / NOT YET VALIDATED,3258.996,47.0115,783.8,2313.5845,3603.84002,1290.25552,-1.591615728e-12,PASS,9M tax/intangible/NWC economics modeled; only Q4 cash included at t=0.25; no SBC add-back or lease capitalization
+Bear,HYPOTHETICAL / NOT YET VALIDATED,3258.996,47.0115,783.8,2313.5845,2769.578932,455.994432,3.410605132e-13,PASS,9M tax/intangible/NWC economics modeled; only Q4 cash included at t=0.25; no SBC add-back or lease capitalization

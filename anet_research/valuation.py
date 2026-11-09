@@ -5,6 +5,7 @@ All scenario values are hypotheses, not management guidance or fair-value conclu
 """
 import argparse
 import csv
+import copy
 import hashlib
 import json
 import math
@@ -162,8 +163,41 @@ def forecast(inputs, scenario, name):
     return pd.DataFrame(records)
 
 
+def allocate_liquidity(allocation):
+    """Allocate ONE reported cash/securities pool, including a reserve beyond cash."""
+    amounts={}
+    reasons=[]
+    for key in ['reported_cash','reported_investments','operating_liquidity_reserve','investment_adjustments']:
+        row=allocation.get(key,{})
+        if (row.get('validated') is not True or row.get('value') is None
+            or row.get('reporting_date') != '2026-09-30' or row.get('units') != 'USD millions'
+            or not isinstance(row.get('source_reference'),str) or not row['source_reference'].strip()):
+            reasons.append(key+': '+row.get('reason','Missing validated amount, source, date or units.'))
+            continue
+        amounts[key]=finite(row['value'],key)
+        if amounts[key]<0:
+            raise ValueError('Liquidity inputs must be nonnegative.')
+    if reasons:
+        return None,' | '.join(reasons)
+    cash,invest,reserve,adjust=(amounts[k] for k in ['reported_cash','reported_investments','operating_liquidity_reserve','investment_adjustments'])
+    if reserve+adjust>cash+invest:
+        raise ValueError('Reserve/adjustments exceed the financial-asset pool.')
+    excess=max(cash-reserve,0)
+    remaining_invest=invest-max(reserve-cash,0)-adjust
+    if remaining_invest<0:
+        raise ValueError('Investment adjustments exceed eligible securities after reserve.')
+    return {'excess_cash':excess,'nonoperating_investments':remaining_invest},''
+
+
 def equity_bridge(ev, bridge):
-    required = ['excess_cash','nonoperating_investments','debt_and_debt_like','other_equity_claims','diluted_shares']
+    bridge=copy.deepcopy(bridge)
+    if 'liquidity_allocation' in bridge:
+        allocated,reason=allocate_liquidity(bridge['liquidity_allocation'])
+        for key in ['excess_cash','nonoperating_investments']:
+            bridge['inputs'][key].update(value=allocated[key] if allocated else None,
+                validated=allocated is not None,reason=reason,
+                source_reference='Derived from validated same-date disjoint cash/securities pool and reserve/adjustments' if allocated else '')
+    required = ['excess_cash','nonoperating_investments','debt_and_debt_like','other_equity_claims','diluted_shares','other_nonoperating_assets']
     reasons = []
     values = {}
     if bridge.get('reference_date') != '2026-09-30':
@@ -174,6 +208,12 @@ def equity_bridge(ev, bridge):
                 or not isinstance(row.get('source_reference'),str) or not row['source_reference'].strip()):
             reasons.append(f'{field}: '+row.get('reason','Missing validated value and source reference.'))
             continue
+        if row.get('reporting_date','2026-09-30') != '2026-09-30':
+            reasons.append(field+': reporting date mismatch.')
+            continue
+        if field=='diluted_shares' and row.get('basis') != 'point_in_time_fully_diluted':
+            reasons.append('diluted_shares: valuation basis must be point_in_time_fully_diluted, not weighted-average EPS shares.')
+            continue
         value=finite(row['value'],field)
         if value<0 or (field=='diluted_shares' and value<=0):
             raise ValueError('Bridge inputs must be nonnegative and diluted shares positive.')
@@ -182,7 +222,7 @@ def equity_bridge(ev, bridge):
         values[field]=value
     if reasons:
         return dict(equity_value=None,value_per_share=None,bridge_status='BLOCKED',bridge_reasons=' | '.join(reasons))
-    equity=ev+values['excess_cash']+values['nonoperating_investments']-values['debt_and_debt_like']-values['other_equity_claims']
+    equity=ev+values['excess_cash']+values['nonoperating_investments']+values['other_nonoperating_assets']-values['debt_and_debt_like']-values['other_equity_claims']
     return dict(equity_value=equity,value_per_share=equity/values['diluted_shares'],
                 bridge_status='ILLUSTRATIVE ONLY: scenario operating assumptions remain unvalidated',bridge_reasons='')
 
@@ -208,10 +248,16 @@ def dcf(frame, wacc, terminal_growth, bridge):
     pv_terminal=terminal_value*(1+wacc)**(-4.25)
     pv_cash=detail.pv_fcff.sum()
     ev=pv_cash+pv_terminal
+    terminal_reinvestment=terminal_capex-terminal_da+terminal_change_nwc
+    reinvestment_rate=terminal_reinvestment/terminal_nopat if terminal_nopat>0 else None
+    implied_incremental_roc=g/reinvestment_rate if reinvestment_rate is not None and reinvestment_rate>0 and g>0 else None
     result=dict(scenario=frame.iloc[0].scenario,status=STATUS,valuation_reference_date='2026-09-30',
                 wacc=wacc,terminal_growth=g,pv_forecast_fcff=pv_cash,terminal_revenue=terminal_revenue,
                 terminal_nopat=terminal_nopat,terminal_da=terminal_da,terminal_capex=terminal_capex,
                 terminal_change_nwc=terminal_change_nwc,terminal_fcff=terminal_fcff,
+                terminal_net_reinvestment=terminal_reinvestment,terminal_reinvestment_rate=reinvestment_rate,
+                implied_terminal_incremental_roc=implied_incremental_roc,
+                terminal_economic_status="UNVALIDATED implied incremental return; not reported ROIC",
                 terminal_value=terminal_value,pv_terminal_value=pv_terminal,enterprise_value=ev,
                 terminal_value_share=pv_terminal/ev if ev else None,units='USD millions except per-share values in USD',
                 **equity_bridge(ev,bridge))
@@ -271,6 +317,8 @@ def build(output_dir):
     outputs={'historical_inputs.csv':pd.DataFrame(input_rows),'arithmetic_checks.csv':pd.DataFrame(residuals),'forecasts.csv':pd.concat(forecasts,ignore_index=True),'scenario_dcf.csv':pd.DataFrame(summaries),
              'discounted_cash_flows.csv':pd.concat(discounts,ignore_index=True),
              'sensitivity.csv':pd.concat(sensitivities,ignore_index=True),'assumptions.csv':pd.DataFrame(assumptions)}
+    from anet_research.valuation_review import review_outputs
+    outputs.update(review_outputs(config,bridge,inputs))
     # Never permit the reproducibility command to overwrite protected project directories.
     output_dir=Path(output_dir).resolve()
     if (ROOT/'model_outputs').is_symlink():
@@ -287,7 +335,8 @@ def build(output_dir):
     manifest=dict(status=STATUS,inputs=inputs,information_date_note=config['information_date_note'],
                   source_references=[SOURCE_URL+' (Part I Item 1 pp.1,2,5)',ANNUAL_URL+' (Item 8 pp.69,72)'],
                   input_sha256={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in [
-                      ASSUMPTIONS,BRIDGE,ROOT/'data/verified_2023_2025.csv',*sorted(DATA.glob('*'))] if p.is_file()})
+                      ASSUMPTIONS,BRIDGE,ROOT/'data/verified_2023_2025.csv',*sorted(DATA.glob('*')),
+                      *sorted((ROOT/'data/valuation').glob('annual_*')),(ROOT/'data/valuation/bridge_evidence.json')] if p.is_file()})
     (output_dir/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     return outputs
 

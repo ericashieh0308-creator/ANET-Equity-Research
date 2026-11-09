@@ -1,0 +1,16 @@
+period,metric,value,units,classification,source_url,source_reference,source_label
+FY2025,pretax_income,4249.7,USD millions,REPORTED,https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm,2025 Form 10-K Item 8 printed p.69 / local PDF p.73,Income before income taxes
+FY2024,pretax_income,3265.1,USD millions,REPORTED,https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm,2025 Form 10-K Item 8 printed p.69 / local PDF p.73,Income before income taxes
+FY2023,pretax_income,2422.0,USD millions,REPORTED,https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm,2025 Form 10-K Item 8 printed p.69 / local PDF p.73,Income before income taxes
+FY2025,tax_expense,738.3,USD millions,REPORTED,https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm,2025 Form 10-K Item 8 printed p.69 / local PDF p.73,Provision for income taxes
+FY2024,tax_expense,413.0,USD millions,REPORTED,https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm,2025 Form 10-K Item 8 printed p.69 / local PDF p.73,Provision for income taxes
+FY2023,tax_expense,334.7,USD millions,REPORTED,https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm,2025 Form 10-K Item 8 printed p.69 / local PDF p.73,Provision for income taxes
+FY2025,da,72.6,USD millions,REPORTED,https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm,2025 Form 10-K Item 8 printed p.72 / local PDF p.76,Depreciation and amortization
+FY2024,da,62.0,USD millions,REPORTED,https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm,2025 Form 10-K Item 8 printed p.72 / local PDF p.76,Depreciation and amortization
+FY2023,da,70.6,USD millions,REPORTED,https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm,2025 Form 10-K Item 8 printed p.72 / local PDF p.76,Depreciation and amortization
+FY2025,sbc,439.2,USD millions,REPORTED,https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm,2025 Form 10-K Item 8 printed p.72 / local PDF p.76,Stock-based compensation
+FY2024,sbc,355.4,USD millions,REPORTED,https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm,2025 Form 10-K Item 8 printed p.72 / local PDF p.76,Stock-based compensation
+FY2023,sbc,296.8,USD millions,REPORTED,https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm,2025 Form 10-K Item 8 printed p.72 / local PDF p.76,Stock-based compensation
+FY2025,cash_taxes_paid,1095.9,USD millions,REPORTED,https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm,2025 Form 10-K Item 8 printed p.72 / local PDF p.76,"Cash paid for income taxes, net of refunds"
+FY2024,cash_taxes_paid,970.6,USD millions,REPORTED,https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm,2025 Form 10-K Item 8 printed p.72 / local PDF p.76,"Cash paid for income taxes, net of refunds"
+FY2023,cash_taxes_paid,686.2,USD millions,REPORTED,https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm,2025 Form 10-K Item 8 printed p.72 / local PDF p.76,"Cash paid for income taxes, net of refunds"

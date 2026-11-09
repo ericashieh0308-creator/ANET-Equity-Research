@@ -76,7 +76,9 @@ def test_synthetic_fcff_and_bridge_math():
     assert r.revenue==1060
     assert r.annual_fcff==pytest.approx(1060*.3*.8)
     assert r.dcf_included_fcff==pytest.approx(260*.3*.8)
-    for field,v in zip(b['inputs'],[100,20,30,10,10]):
+    b.pop('liquidity_allocation',None)  # Explicit synthetic, already-allocated pool.
+    b['inputs']['diluted_shares']['basis']='point_in_time_fully_diluted'
+    for field,v in zip(b['inputs'],[100,20,30,10,10,0]):
         b['inputs'][field].update(value=v,validated=True,source_reference='Synthetic test fixture only')
     bridge=equity_bridge(1000,b)
     assert bridge['equity_value']==1080 and bridge['value_per_share']==108
@@ -120,6 +122,8 @@ def test_sensitivity_direction_and_grid():
 
 def test_bridge_missing_date_units_and_share_count():
     _,b=settings()
+    b.pop('liquidity_allocation',None)
+    b['inputs']['diluted_shares']['basis']='point_in_time_fully_diluted'
     for k in b['inputs']:
         b['inputs'][k].update(value=1,validated=True,source_reference='Synthetic only')
     b['reference_date']='2025-12-31'

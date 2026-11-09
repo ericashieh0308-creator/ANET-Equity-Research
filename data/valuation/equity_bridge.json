@@ -1,10 +1,100 @@
 {
   "reference_date": "2026-09-30",
   "inputs": {
-    "excess_cash": {"value": null, "validated": false, "units": "USD millions", "source_reference": "", "reason": "Reported cash is available, but required operating cash and other adjustments have not been validated."},
-    "nonoperating_investments": {"value": null, "validated": false, "units": "USD millions", "source_reference": "", "reason": "Marketable securities are reported, but eligibility, taxes and overlap with excess cash need validation."},
-    "debt_and_debt_like": {"value": null, "validated": false, "units": "USD millions", "source_reference": "", "reason": "Debt, leases and other debt-like claims require a sourced classification review; no assumption of zero debt."},
-    "other_equity_claims": {"value": null, "validated": false, "units": "USD millions", "source_reference": "", "reason": "Minority interests and other adjustments require validation, including any justified zero values."},
-    "diluted_shares": {"value": null, "validated": false, "units": "million shares", "source_reference": "", "reason": "Period weighted-average diluted EPS shares are not a validated point-in-time fully diluted valuation denominator."}
+    "excess_cash": {
+      "value": null,
+      "validated": false,
+      "units": "USD millions",
+      "source_reference": "",
+      "reason": "Reported cash 2288.1 is verified; operating liquidity reserve unresolved. Derive allocation from a single cash-plus-investments pool; never assume all cash excess.",
+      "reporting_date": "2026-09-30",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/anet-20260930.htm"
+    },
+    "nonoperating_investments": {
+      "value": null,
+      "validated": false,
+      "units": "USD millions",
+      "source_reference": "",
+      "reason": "Reported marketable securities 12070.9 verified; remaining operating reserve and eligibility/tax adjustments unresolved.",
+      "reporting_date": "2026-09-30",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/anet-20260930.htm"
+    },
+    "debt_and_debt_like": {
+      "value": null,
+      "validated": false,
+      "units": "USD millions",
+      "source_reference": "",
+      "reason": "Zero separately disclosed funded borrowings is a limited classification; 358.1 other long-term liabilities and 296.4 other current liabilities lack a full debt-like/tax split. Current operating amounts already included in NWC must not be deducted again. Lease rent remains operating.",
+      "reporting_date": "2026-09-30",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/anet-20260930.htm"
+    },
+    "other_equity_claims": {
+      "value": null,
+      "validated": false,
+      "units": "USD millions",
+      "source_reference": "",
+      "reason": "Preferred equity and NCI have justified zero components. Other nonoperating/tax claims cannot be set to zero without an aggregate-liability classification; operating claims must not be deducted twice.",
+      "reporting_date": "2026-09-30",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/anet-20260930.htm"
+    },
+    "diluted_shares": {
+      "value": null,
+      "validated": false,
+      "units": "million shares",
+      "source_reference": "",
+      "reason": "September basic shares 1263.4 and unvested RSUs 24.3 are verified, but award/ESPP/options terms, vesting and as-of-date treasury-stock/economic treatment are unresolved. Q3 EPS shares 1278.2 and 9M 1276.0 are period averages, not point-in-time valuation denominators.",
+      "reporting_date": "2026-09-30",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/anet-20260930.htm",
+      "basis": "unresolved"
+    },
+    "other_nonoperating_assets": {
+      "value": null,
+      "validated": false,
+      "units": "USD millions",
+      "reporting_date": "2026-09-30",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/anet-20260930.htm",
+      "source_reference": "",
+      "reason": "Other assets 899.2 and strategic-investment income require identification of any additional nonoperating asset fair values, basis and overlap. Do not assume all other assets excess or automatically assume zero additional assets."
+    }
+  },
+  "review_status": "Reported components verified; economic allocation and point-in-time dilution unresolved.",
+  "lease_policy": "Operating-lease rent remains in EBIT; no rent add-back or capitalized-lease deduction. A capitalized policy would require consistent EBIT, reinvestment and discount-rate adjustments.",
+  "liquidity_allocation": {
+    "reported_cash": {
+      "value": 2288.1,
+      "validated": true,
+      "units": "USD millions",
+      "reporting_date": "2026-09-30",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/anet-20260930.htm",
+      "source_reference": "10-Q Part I Item 1 p.1; Note 2 p.7",
+      "reason": "Cash already excludes restricted cash."
+    },
+    "reported_investments": {
+      "value": 12070.9,
+      "validated": true,
+      "units": "USD millions",
+      "reporting_date": "2026-09-30",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/anet-20260930.htm",
+      "source_reference": "10-Q Part I Item 1 p.1; Note 2 pp.7\u20138",
+      "reason": "Fair value separate from cash; excludes cash-equivalent subset."
+    },
+    "operating_liquidity_reserve": {
+      "value": null,
+      "validated": false,
+      "units": "USD millions",
+      "reporting_date": "2026-09-30",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/anet-20260930.htm",
+      "source_reference": "",
+      "reason": "Cash necessary for ongoing operations and commitments is not quantified by these filings; must be estimated and justified."
+    },
+    "investment_adjustments": {
+      "value": null,
+      "validated": false,
+      "units": "USD millions",
+      "reporting_date": "2026-09-30",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/anet-20260930.htm",
+      "source_reference": "",
+      "reason": "Any taxes, restrictions or other eligibility adjustments require validation; unknown is not zero."
+    }
   }
 }

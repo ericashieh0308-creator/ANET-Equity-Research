@@ -18,7 +18,7 @@
   ],
   "input_sha256": {
     "data/valuation/assumptions.json": "1529178804d715ff58e17a5ec0742f5b6e4b31c1fd7935a0e29b32260c2d5a7b",
-    "data/valuation/equity_bridge.json": "70cebe4c8f9b88df3c08c4ebfaa414b5c29e10ee12ed6ad90506eae38583e76d",
+    "data/valuation/equity_bridge.json": "1ab831dd28398ff9e153c74d078a9681787e2427715f09f337eee2024bb30e2a",
     "data/verified_2023_2025.csv": "ee4a83d5039e1bc4786a7f2784fd24ac63ce712525e3697945472e03046f6f82",
     "data/quarterly/anet_20260930_balance_sheet.csv": "bcd9e2bd5646d58d54576b8a6da76647c8cde818c4f61dccca0d7c49a001dd72",
     "data/quarterly/anet_20260930_cash_flow_statement.csv": "42b9cd13170048abd05a54adeb2fd74690d8675c5eee7fb55e5cb7341ed68248",
@@ -26,6 +26,9 @@
     "data/quarterly/anet_20260930_income_statement.csv": "71ead0111d2faed9cfd8ed87b06830d4776f76ed5fe28d5dde5dadf3c36c298f",
     "data/quarterly/anet_20260930_metadata.json": "a74b92af0f5ebc8724b85fb79e408d7d93a0fbf8dee045032ab59789fa757681",
     "data/quarterly/anet_20260930_metrics.csv": "f89f026adf00d0e0f8063e9efbd922f26d763a52c4c8462f231f57c0034ccbc2",
-    "data/quarterly/anet_20260930_source.txt": "9fbb8b9389ca7ec895d9608ba1efbe47d40ac01e15c2fb118feab8e2f7b7450d"
+    "data/quarterly/anet_20260930_source.txt": "9fbb8b9389ca7ec895d9608ba1efbe47d40ac01e15c2fb118feab8e2f7b7450d",
+    "data/valuation/annual_source_extracts.json": "002090c93d3093f819705f6870a8b77a67bbc08f8ec3594c184924751a9e205a",
+    "data/valuation/annual_supplement.csv": "0f0abd248d4bc6ad2e2ec3c4c9146859fde0367a5c190d4510cfb5367f9092a2",
+    "data/valuation/bridge_evidence.json": "b8c34f230c41a313978a4bed7e227bde6ccbcd236a8538dd149c1c267c4a4a22"
   }
 }

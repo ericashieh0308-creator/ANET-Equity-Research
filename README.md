@@ -178,3 +178,16 @@ splices the existing FCF series. Taxes and operating NWC classification remain
 modeled. TTM FCF and TTM EPS remain unavailable. Equity and per-share outputs are
 blocked until the missing dated cash/investment, debt/claims and diluted-share
 inputs in `data/valuation/equity_bridge.json` are validated. No current price is supplied.
+
+### DCF evidence and bridge review (PR #4 follow-up)
+
+See [the valuation evidence review](docs/valuation_evidence_review.md) for verified
+September 2026 cash/securities and basic-share observations, unresolved excess-cash
+allocation and dilution, reported/derived assumption evidence, CapEx alternatives,
+NWC classifications and terminal reinvestment diagnostics. Re-running the same
+valuation command also refreshes these review tables. The existing scenario
+rates and enterprise values are unchanged; they are still hypothetical.
+Equity/per-share output remains **BLOCKED** until operating liquidity, investment
+adjustments, other nonoperating assets, aggregate claims and point-in-time dilution are supported. No
+weighted-average EPS denominator is automatically accepted. No dashboard or
+protected historical input was changed. The full suite currently passes 87 tests.

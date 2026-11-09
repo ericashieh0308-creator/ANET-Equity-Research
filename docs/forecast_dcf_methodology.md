@@ -162,11 +162,13 @@ open. Review terminal-value dependence in `scenario_dcf.csv`.
 ## Enterprise-to-equity bridge: blocked
 
 The implemented formula is enterprise value + eligible excess cash + eligible
-nonoperating investments − debt/debt-like claims − other equity claims; divide
+nonoperating investments + separately validated other nonoperating assets − debt/debt-like claims − other equity claims; divide
 by validated million diluted shares for USD per share. Every bridge input must
 have explicit validation, correct units and a source reference at the same date.
-Current inputs are deliberately null in `equity_bridge.json`, including amounts
-that could eventually be justified as zero. Outputs carry specific blocking reasons.
+Aggregate bridge inputs remain null in `equity_bridge.json`; the verified raw cash
+and securities pool is now populated separately from the unresolved operating
+reserve and investment adjustments. Missing amounts are never assumed zero.
+Outputs carry specific blocking reasons. See the [evidence review](valuation_evidence_review.md).
 
 Reported cash and securities do not automatically equal distributable excess
 cash; no assumption of zero debt or other claims is made. Period weighted-average
@@ -218,9 +220,20 @@ No defensible investment recommendation follows from the numerical examples alon
 
 ## Local validation
 
-The complete existing and new test suite passes **76 tests**, including 19 new
-valuation cases. All 60 saved forecast arithmetic checks pass. Tests also verify
+The complete existing and new test suite passes **87 tests**, including the original 19 valuation cases and 11 new
+evidence/bridge review cases. All 60 saved forecast arithmetic checks pass. Tests also verify
 the stub cash-flow exclusion, normalized terminal reinvestment, sensitivity
 direction, missing/invalid assumptions, blocked bridge inputs, synthetic bridge
 arithmetic, reproducible saved outputs and input hashes. Original workbook and
 annual CSV fingerprints remain unchanged.
+
+## Evidence-review extension
+
+The [bridge and assumption evidence review](valuation_evidence_review.md) now
+provides source-dated cash/share/claim observations, a seven-period historical
+evidence table, a 33-row assumption-evidence matrix, NWC classification comparisons,
+CapEx scope alternatives, annual/stub reconciliations and terminal implied-return
+diagnostics. All scenario rates remain unchanged and hypothetical. Liquidity is
+allocated from a single disjoint pool with explicit reserve/adjustment gates;
+period-average EPS shares cannot satisfy the point-in-time valuation basis.
+The 60 original forecast checks plus three annual/stub reconciliations pass.
