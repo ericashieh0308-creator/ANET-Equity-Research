@@ -18,7 +18,7 @@
   ],
   "input_sha256": {
     "data/valuation/assumptions.json": "1529178804d715ff58e17a5ec0742f5b6e4b31c1fd7935a0e29b32260c2d5a7b",
-    "data/valuation/equity_bridge.json": "1ab831dd28398ff9e153c74d078a9681787e2427715f09f337eee2024bb30e2a",
+    "data/valuation/equity_bridge.json": "b0eaa0b0a294540ce871efcaa8b95f3c53ad4e52138b84e65e40690e079c5850",
     "data/verified_2023_2025.csv": "ee4a83d5039e1bc4786a7f2784fd24ac63ce712525e3697945472e03046f6f82",
     "data/quarterly/anet_20260930_balance_sheet.csv": "bcd9e2bd5646d58d54576b8a6da76647c8cde818c4f61dccca0d7c49a001dd72",
     "data/quarterly/anet_20260930_cash_flow_statement.csv": "42b9cd13170048abd05a54adeb2fd74690d8675c5eee7fb55e5cb7341ed68248",

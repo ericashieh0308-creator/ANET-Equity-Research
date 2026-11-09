@@ -1,11 +1,26 @@
-# ANET-Equity-Research
-An equity research portfolio on Arista Networks (NYSE: ANET), combining an **8-page research report**, SEC-verified historical analysis, a Python/Streamlit dashboard, and a reproducible FCFF DCF with Base/Bull/Bear scenarios and WACC/terminal-growth sensitivity analysis.
+# ANET Equity Research
 
-## Portfolio research report
+A reproducible Arista Networks (NYSE: ANET) research portfolio by **Ya-Cheng Hsieh (Erica Hsieh)**: SEC-sourced financial analysis, a Python/Streamlit dashboard, FCFF DCF scenarios, sensitivity analysis and evidence-controlled investment research.
 
-**[Read the 8-page Equity Research & Scenario-Based DCF Valuation report](reports/ANET_Equity_Research_2026-11-08.pdf)** — by Ya-Cheng Hsieh (Erica Hsieh), research date November 8, 2026. Sourced ANET financial analysis, preliminary investment hypotheses, driver-based FCFF scenarios and sensitivity analysis demonstrate a reproducible equity research workflow. All scenario valuations are hypothetical; equity/per-share valuation remains **BLOCKED**, with no recommendation or price target.
+## Latest portfolio report
 
-[Editable report source](reports/anet_equity_research.md) · [Build and validation instructions](reports/README.md)
+**[Read the 10-page integrated Equity Research & Scenario-Based DCF report](reports/ANET_Integrated_Equity_Research_v2.pdf)** · Research date: November 8, 2026 (US Eastern).
+
+The report covers business and AI networking, financial performance, preliminary thesis/catalysts, Base/Bull/Bear enterprise valuations, peer operating comparisons and a twelve-month target/rating framework. **All scenario assumptions remain HYPOTHETICAL / NOT YET VALIDATED. Equity/per-share values, a twelve-month target and upside/downside remain BLOCKED; the conclusion is NOT RATED.** A corroborated dated price is context, not a recommendation. Trading multiples remain blocked where aligned inputs are missing.
+
+[Editable v2 source](reports/anet_integrated_research.md) · [Build / validation guide](reports/INTEGRATED_README.md) · [Previous 8-page report (archived)](reports/archive/v1_ANET_Equity_Research_2026-11-08.pdf)
+
+### Evidence and valuation deliverables
+
+- [Integrated methodology](docs/integrated_valuation_methodology.md): scoped direct SEC rechecks, classification policy, NWC/CapEx/SBC limits and unchanged scenario EVs.
+- [Equity bridge ledger](model_outputs/integrated/bridge_classification_ledger.csv) and [diluted-share schedule](model_outputs/integrated/diluted_share_schedule.csv): reported components separated from unresolved valuation adjustments.
+- [Assumption/evidence matrix](model_outputs/integrated/assumption_evidence_matrix.csv), [financial analysis](model_outputs/integrated/financial_analysis.csv) and [32 SEC figure rechecks](model_outputs/integrated/sec_rechecks.csv).
+- [Peer analysis](docs/peer_valuation.md) and [comparison table](model_outputs/integrated/peer_comparison.csv): sourced annual growth/margins with explicit fiscal dates; no invented market/forward multiples.
+- [Price target / rating methodology](docs/price_target_framework.md), [dated price evidence](data/integrated/market_reference.json), [readiness/blocker output](model_outputs/integrated/valuation_readiness.json) and [thesis / risk framework](docs/investment_framework.md).
+
+**Validation: [132 tests passed and exact blockers](docs/integrated_validation.md).**
+
+The September 30, 2026 DCF uses information filed later on November 4 and is retrospective. No validated stock target is claimed. The original workbooks, verified historical CSVs, original scenario figures, dashboard and previous report are preserved.
 
 ## Financial analysis dashboard
 
@@ -210,4 +225,5 @@ Equity/per-share output remains **BLOCKED** until operating liquidity, investmen
 adjustments, other nonoperating assets, aggregate claims and point-in-time dilution are supported. No
 weighted-average EPS denominator is automatically accepted. No dashboard or
 protected historical input was changed by that review. With report dependencies
-installed, the full suite passes **90 tests**, including three PDF/report tests.
+installed, the earlier report-stage suite passed **90 tests**. The integrated upgrade adds
+regression and report tests; see the latest validation guide linked above.

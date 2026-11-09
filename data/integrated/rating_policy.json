@@ -1,0 +1,20 @@
+{
+  "research_date": "2026-11-08",
+  "horizon_date": "2027-11-08",
+  "status": "FRAMEWORK ONLY; NO RATING ASSIGNED",
+  "return_basis": "12-month price return excluding dividends; future dividends not assumed",
+  "buy_threshold": null,
+  "sell_threshold": null,
+  "threshold_status": "NOT SET: analyst policy requires explicit rationale; no invented institutional thresholds.",
+  "requirements": [
+    "supported_operating_assumptions",
+    "supported_wacc_terminal_economics",
+    "verified_equity_bridge",
+    "point_in_time_dilution",
+    "forward_12m_revaluation",
+    "verified_reference_price",
+    "dated_price_alignment",
+    "documented_rating_thresholds"
+  ],
+  "date_policy": "Retrospective September 30 fair value cannot be compared mechanically with November 6 close as a 12-month target. Revalue at a justified forward horizon; subtract elapsed FCFF from roll-forward EV and reconcile future cash/claims/shares consistently. No automatic (1+WACC) equity-price roll-forward."
+}

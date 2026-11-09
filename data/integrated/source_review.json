@@ -1,0 +1,335 @@
+{
+  "review_date": "2026-11-08",
+  "review_timezone": "America/New_York",
+  "method": "Direct official SEC HTML inspection via web tool plus reconciliation to existing local source snapshots; not an independent audit. Only listed fields rechecked in this pass.",
+  "filings": {
+    "K": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm",
+    "Q": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/anet-20260930.htm",
+    "N": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm",
+    "C": "https://www.sec.gov/Archives/edgar/data/858877/000085887726000132/csco-20260725.htm"
+  },
+  "filing_dates": {
+    "Q": {
+      "filing_date": "2026-11-04",
+      "accepted_at": "2026-11-03T18:50:52",
+      "period_end": "2026-09-30",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/0001596532-26-000254-index.html"
+    }
+  },
+  "annual_rechecks": [
+    {
+      "metric": "revenue",
+      "source_label": "Total revenue",
+      "period": "FY2025",
+      "value": 9005.7,
+      "units": "USD millions",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm",
+      "source_reference": "Item 8 printed p.69",
+      "status": "DIRECT_SEC_RECHECK"
+    },
+    {
+      "metric": "revenue",
+      "source_label": "Total revenue",
+      "period": "FY2024",
+      "value": 7003.1,
+      "units": "USD millions",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm",
+      "source_reference": "Item 8 printed p.69",
+      "status": "DIRECT_SEC_RECHECK"
+    },
+    {
+      "metric": "revenue",
+      "source_label": "Total revenue",
+      "period": "FY2023",
+      "value": 5860.2,
+      "units": "USD millions",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm",
+      "source_reference": "Item 8 printed p.69",
+      "status": "DIRECT_SEC_RECHECK"
+    },
+    {
+      "metric": "cost_of_revenue",
+      "source_label": "Total cost of revenue",
+      "period": "FY2025",
+      "value": 3237,
+      "units": "USD millions",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm",
+      "source_reference": "Item 8 printed p.69",
+      "status": "DIRECT_SEC_RECHECK"
+    },
+    {
+      "metric": "cost_of_revenue",
+      "source_label": "Total cost of revenue",
+      "period": "FY2024",
+      "value": 2511.8,
+      "units": "USD millions",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm",
+      "source_reference": "Item 8 printed p.69",
+      "status": "DIRECT_SEC_RECHECK"
+    },
+    {
+      "metric": "cost_of_revenue",
+      "source_label": "Total cost of revenue",
+      "period": "FY2023",
+      "value": 2229.9,
+      "units": "USD millions",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm",
+      "source_reference": "Item 8 printed p.69",
+      "status": "DIRECT_SEC_RECHECK"
+    },
+    {
+      "metric": "gross_profit",
+      "source_label": "Gross profit",
+      "period": "FY2025",
+      "value": 5768.7,
+      "units": "USD millions",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm",
+      "source_reference": "Item 8 printed p.69",
+      "status": "DIRECT_SEC_RECHECK"
+    },
+    {
+      "metric": "gross_profit",
+      "source_label": "Gross profit",
+      "period": "FY2024",
+      "value": 4491.3,
+      "units": "USD millions",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm",
+      "source_reference": "Item 8 printed p.69",
+      "status": "DIRECT_SEC_RECHECK"
+    },
+    {
+      "metric": "gross_profit",
+      "source_label": "Gross profit",
+      "period": "FY2023",
+      "value": 3630.3,
+      "units": "USD millions",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm",
+      "source_reference": "Item 8 printed p.69",
+      "status": "DIRECT_SEC_RECHECK"
+    },
+    {
+      "metric": "operating_expenses",
+      "source_label": "Total operating expenses",
+      "period": "FY2025",
+      "value": 1912.6,
+      "units": "USD millions",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm",
+      "source_reference": "Item 8 printed p.69",
+      "status": "DIRECT_SEC_RECHECK"
+    },
+    {
+      "metric": "operating_expenses",
+      "source_label": "Total operating expenses",
+      "period": "FY2024",
+      "value": 1546.7,
+      "units": "USD millions",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm",
+      "source_reference": "Item 8 printed p.69",
+      "status": "DIRECT_SEC_RECHECK"
+    },
+    {
+      "metric": "operating_expenses",
+      "source_label": "Total operating expenses",
+      "period": "FY2023",
+      "value": 1373,
+      "units": "USD millions",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm",
+      "source_reference": "Item 8 printed p.69",
+      "status": "DIRECT_SEC_RECHECK"
+    },
+    {
+      "metric": "operating_income",
+      "source_label": "Income from operations",
+      "period": "FY2025",
+      "value": 3856.1,
+      "units": "USD millions",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm",
+      "source_reference": "Item 8 printed p.69",
+      "status": "DIRECT_SEC_RECHECK"
+    },
+    {
+      "metric": "operating_income",
+      "source_label": "Income from operations",
+      "period": "FY2024",
+      "value": 2944.6,
+      "units": "USD millions",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm",
+      "source_reference": "Item 8 printed p.69",
+      "status": "DIRECT_SEC_RECHECK"
+    },
+    {
+      "metric": "operating_income",
+      "source_label": "Income from operations",
+      "period": "FY2023",
+      "value": 2257.3,
+      "units": "USD millions",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm",
+      "source_reference": "Item 8 printed p.69",
+      "status": "DIRECT_SEC_RECHECK"
+    },
+    {
+      "metric": "net_income",
+      "source_label": "Net income",
+      "period": "FY2025",
+      "value": 3511.4,
+      "units": "USD millions",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm",
+      "source_reference": "Item 8 printed p.69",
+      "status": "DIRECT_SEC_RECHECK"
+    },
+    {
+      "metric": "net_income",
+      "source_label": "Net income",
+      "period": "FY2024",
+      "value": 2852.1,
+      "units": "USD millions",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm",
+      "source_reference": "Item 8 printed p.69",
+      "status": "DIRECT_SEC_RECHECK"
+    },
+    {
+      "metric": "net_income",
+      "source_label": "Net income",
+      "period": "FY2023",
+      "value": 2087.3,
+      "units": "USD millions",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm",
+      "source_reference": "Item 8 printed p.69",
+      "status": "DIRECT_SEC_RECHECK"
+    },
+    {
+      "metric": "operating_cash_flow",
+      "source_label": "Net cash provided by operating activities",
+      "period": "FY2025",
+      "value": 4371.9,
+      "units": "USD millions",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm",
+      "source_reference": "Item 8 printed p.72",
+      "status": "DIRECT_SEC_RECHECK"
+    },
+    {
+      "metric": "operating_cash_flow",
+      "source_label": "Net cash provided by operating activities",
+      "period": "FY2024",
+      "value": 3708.2,
+      "units": "USD millions",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm",
+      "source_reference": "Item 8 printed p.72",
+      "status": "DIRECT_SEC_RECHECK"
+    },
+    {
+      "metric": "operating_cash_flow",
+      "source_label": "Net cash provided by operating activities",
+      "period": "FY2023",
+      "value": 2034,
+      "units": "USD millions",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm",
+      "source_reference": "Item 8 printed p.72",
+      "status": "DIRECT_SEC_RECHECK"
+    },
+    {
+      "metric": "property_equipment_intangible_purchases",
+      "source_label": "Purchases of property, equipment and intangible assets",
+      "period": "FY2025",
+      "value": -119.5,
+      "units": "USD millions",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm",
+      "source_reference": "Item 8 printed p.72",
+      "status": "DIRECT_SEC_RECHECK"
+    },
+    {
+      "metric": "property_equipment_intangible_purchases",
+      "source_label": "Purchases of property, equipment and intangible assets",
+      "period": "FY2024",
+      "value": -32,
+      "units": "USD millions",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm",
+      "source_reference": "Item 8 printed p.72",
+      "status": "DIRECT_SEC_RECHECK"
+    },
+    {
+      "metric": "property_equipment_intangible_purchases",
+      "source_label": "Purchases of property, equipment and intangible assets",
+      "period": "FY2023",
+      "value": -34.4,
+      "units": "USD millions",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm",
+      "source_reference": "Item 8 printed p.72",
+      "status": "DIRECT_SEC_RECHECK"
+    }
+  ],
+  "interim_rechecks": [
+    {
+      "metric": "revenue",
+      "period": "Q3 2026",
+      "value": 3657.6,
+      "units": "USD millions",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/anet-20260930.htm",
+      "source_reference": "Part I Item 1 p.2; cash flow p.5",
+      "status": "DIRECT_SEC_RECHECK"
+    },
+    {
+      "metric": "revenue",
+      "period": "Q3 2025",
+      "value": 2308.3,
+      "units": "USD millions",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/anet-20260930.htm",
+      "source_reference": "Part I Item 1 p.2; cash flow p.5",
+      "status": "DIRECT_SEC_RECHECK"
+    },
+    {
+      "metric": "revenue",
+      "period": "9M 2026",
+      "value": 9402.3,
+      "units": "USD millions",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/anet-20260930.htm",
+      "source_reference": "Part I Item 1 p.2; cash flow p.5",
+      "status": "DIRECT_SEC_RECHECK"
+    },
+    {
+      "metric": "revenue",
+      "period": "9M 2025",
+      "value": 6517.9,
+      "units": "USD millions",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/anet-20260930.htm",
+      "source_reference": "Part I Item 1 p.2; cash flow p.5",
+      "status": "DIRECT_SEC_RECHECK"
+    },
+    {
+      "metric": "net_income",
+      "period": "Q3 2026",
+      "value": 1560.4,
+      "units": "USD millions",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/anet-20260930.htm",
+      "source_reference": "Part I Item 1 p.2; cash flow p.5",
+      "status": "DIRECT_SEC_RECHECK"
+    },
+    {
+      "metric": "net_income",
+      "period": "Q3 2025",
+      "value": 853,
+      "units": "USD millions",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/anet-20260930.htm",
+      "source_reference": "Part I Item 1 p.2; cash flow p.5",
+      "status": "DIRECT_SEC_RECHECK"
+    },
+    {
+      "metric": "net_income",
+      "period": "9M 2026",
+      "value": 3796.2,
+      "units": "USD millions",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/anet-20260930.htm",
+      "source_reference": "Part I Item 1 p.2; cash flow p.5",
+      "status": "DIRECT_SEC_RECHECK"
+    },
+    {
+      "metric": "net_income",
+      "period": "9M 2025",
+      "value": 2555.6,
+      "units": "USD millions",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/anet-20260930.htm",
+      "source_reference": "Part I Item 1 p.2; cash flow p.5",
+      "status": "DIRECT_SEC_RECHECK"
+    }
+  ]
+}

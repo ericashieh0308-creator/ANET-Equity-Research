@@ -1,0 +1,4 @@
+component,value,units,date,status,formula,source_url,source_reference,incremental_shares,reason
+Point-in-time basic,1263.4,million shares,2026-09-30,REPORTED,"Starting issued/outstanding balance, rounded",https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/anet-20260930.htm,"10-Q pp.1,4",,
+unvested_RSU_population,24.3,million shares,2026-09-30,BLOCKED,"count × max(0, 1 − justified proceeds per award / same-date price)",https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/anet-20260930.htm,10-Q Notes 5–6 pp.11–12,,"Missing same-date award terms, price, vesting/proceeds or SBC service-cost policy."
+Fully diluted valuation denominator,,million shares,2026-09-30,BLOCKED,basic + eligible incremental awards; EPS averages excluded,,,,"Award/option/ESPP population completeness not established.; unvested_RSU_population: Missing same-date award terms, price, vesting/proceeds or SBC service-cost policy."

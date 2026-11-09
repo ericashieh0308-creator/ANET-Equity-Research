@@ -1,0 +1,34 @@
+[
+  {
+    "ticker": "CSCO",
+    "company": "Cisco Systems",
+    "fiscal_year": "FY2026",
+    "period_start": "2025-07-27",
+    "period_end": "2026-07-25",
+    "prior_period_end": "2025-07-26",
+    "revenue": 63325,
+    "prior_revenue": 56654,
+    "operating_income": 15368,
+    "units": "USD millions",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/858877/000085887726000132/csco-20260725.htm",
+    "source_reference": "Item 8 consolidated statements of operations printed p.57",
+    "source_excerpt": "Total revenue: 63,325 / 56,654; operating income: 15,368 / 11,760 (FY2026 / FY2025).",
+    "comparability": "Direct networking competitor, but group security/software/services and acquisitions complicate consolidated margin comparisons; not a pure-play AI Ethernet peer."
+  },
+  {
+    "ticker": "NVDA",
+    "company": "NVIDIA",
+    "fiscal_year": "FY2026",
+    "period_start": "2025-01-27",
+    "period_end": "2026-01-25",
+    "prior_period_end": "2025-01-26",
+    "revenue": 215938,
+    "prior_revenue": 130497,
+    "operating_income": 130387,
+    "units": "USD millions",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm",
+    "source_reference": "Item 8 consolidated statements of income printed p.51; Item 1 Data Center p.5",
+    "source_excerpt": "Revenue: 215,938 / 130,497; operating income: 130,387 / 81,453 (FY2026 / FY2025).",
+    "comparability": "Networking/platform competitor, but consolidated compute and other businesses make group margins and multiples unsuitable as direct ANET benchmarks."
+  }
+]

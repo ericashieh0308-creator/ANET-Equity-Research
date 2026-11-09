@@ -96,5 +96,16 @@
       "source_reference": "",
       "reason": "Any taxes, restrictions or other eligibility adjustments require validation; unknown is not zero."
     }
+  },
+  "claim_classification": {
+    "already_in_operating_nwc": [
+      "accounts_payable",
+      "accrued_liabilities",
+      "current_deferred_revenue",
+      "other_current_liabilities"
+    ],
+    "debt_ids": [],
+    "other_claim_ids": [],
+    "status": "UNRESOLVED: empty bridge claim lists are not verified zeros; aggregate inputs remain null. Reclassifying current balances requires coordinated NWC changes."
   }
 }

@@ -9,6 +9,7 @@ import copy
 import hashlib
 import json
 import math
+from urllib.parse import urlparse
 from pathlib import Path
 
 import pandas as pd
@@ -190,11 +191,12 @@ def allocate_liquidity(allocation):
 
 
 def equity_bridge(ev, bridge):
+    ev=finite(ev,'enterprise value')
     bridge=copy.deepcopy(bridge)
     if 'liquidity_allocation' in bridge:
         allocated,reason=allocate_liquidity(bridge['liquidity_allocation'])
         for key in ['excess_cash','nonoperating_investments']:
-            bridge['inputs'][key].update(value=allocated[key] if allocated else None,
+            bridge.setdefault('inputs',{}).setdefault(key,{}).update(value=allocated[key] if allocated else None,
                 validated=allocated is not None,reason=reason,
                 source_reference='Derived from validated same-date disjoint cash/securities pool and reserve/adjustments' if allocated else '')
     required = ['excess_cash','nonoperating_investments','debt_and_debt_like','other_equity_claims','diluted_shares','other_nonoperating_assets']
@@ -208,8 +210,12 @@ def equity_bridge(ev, bridge):
                 or not isinstance(row.get('source_reference'),str) or not row['source_reference'].strip()):
             reasons.append(f'{field}: '+row.get('reason','Missing validated value and source reference.'))
             continue
-        if row.get('reporting_date','2026-09-30') != '2026-09-30':
-            reasons.append(field+': reporting date mismatch.')
+        if row.get('reporting_date') != '2026-09-30':
+            reasons.append(field+': missing or mismatched explicit reporting date.')
+            continue
+        url=urlparse(row.get('source_url',''))
+        if url.scheme!='https' or url.hostname not in {'sec.gov','www.sec.gov'}:
+            reasons.append(field+': require an official HTTPS SEC source URL.')
             continue
         if field=='diluted_shares' and row.get('basis') != 'point_in_time_fully_diluted':
             reasons.append('diluted_shares: valuation basis must be point_in_time_fully_diluted, not weighted-average EPS shares.')
@@ -220,6 +226,11 @@ def equity_bridge(ev, bridge):
         if row.get('units') != ('million shares' if field=='diluted_shares' else 'USD millions'):
             raise ValueError('Bridge unit mismatch.')
         values[field]=value
+    claims=bridge.get('claim_classification',{})
+    operating=set(claims.get('already_in_operating_nwc',[]))
+    debt=set(claims.get('debt_ids',[]));other=set(claims.get('other_claim_ids',[]))
+    if debt & other or operating & (debt | other):
+        reasons.append('Claim double counting: operating NWC, debt and other claims must be disjoint.')
     if reasons:
         return dict(equity_value=None,value_per_share=None,bridge_status='BLOCKED',bridge_reasons=' | '.join(reasons))
     equity=ev+values['excess_cash']+values['nonoperating_investments']+values['other_nonoperating_assets']-values['debt_and_debt_like']-values['other_equity_claims']

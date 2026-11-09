@@ -1,2 +1,3 @@
 # Generated report PDFs are binary artifacts, not line-oriented source files.
 reports/*.pdf binary
+reports/**/*.pdf binary
