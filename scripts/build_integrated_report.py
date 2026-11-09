@@ -20,7 +20,7 @@ URLS = dict(base.URLS)
 URLS.update(
     C="https://www.sec.gov/Archives/edgar/data/858877/000085887726000132/csco-20260725.htm",
     M="https://stockanalysis.com/stocks/anet/history/",
-    U="https://github.com/ericashieh0308-creator/ANET-Equity-Research/blob/codex/anet-integrated-research-v2/docs/integrated_valuation_methodology.md",
+    U="https://github.com/ericashieh0308-creator/ANET-Equity-Research/blob/334d975cf2412a4211fc7c84fe479b6a31efc7ae/docs/integrated_valuation_methodology.md",
 )
 
 

@@ -34,9 +34,9 @@
     "model_outputs/terminal_economics.csv": "2601c25a33cb33b9067a8441de9816af2fd7511f2eb9a074d9b8b0b4e2ce3754",
     "reports/anet_equity_research.md": "f6138acef801cc58238c577d6dc45a22c530e253213805a6f40004a34674aaf1",
     "reports/anet_integrated_research.md": "30bb7a5d0c9a3c5fc3bfa5551aa2a985b5762ed6cdcee8e2f95fb01a573929a9",
-    "scripts/build_integrated_report.py": "e2c4a1145d6e80f5b4a220bea55621101dd91fa82fa31875ea42cede24305c6a",
+    "scripts/build_integrated_report.py": "5353a4411c4db085fa74eb2a3bac948ce8eaeea6a47608c198d250c32c801a5e",
     "scripts/build_research_report.py": "1360bfd4671367235a40eea9a113770b7c1028f1a580bbb5eafbf2add91497fd"
   },
-  "pdf_sha256": "234e98fca13616337b734600a61c26c4fb7b7fdde343bb303548b48707bdf751",
+  "pdf_sha256": "183781b54cb35a1472c70e3aeeb4b690e42f6987a7da6b54068c5ee2e9aff767",
   "status": "NOT RATED; target/equity/per-share BLOCKED; scenarios HYPOTHETICAL / NOT YET VALIDATED"
 }
