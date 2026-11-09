@@ -18,7 +18,7 @@ The report covers business and AI networking, financial performance, preliminary
 - [Peer analysis](docs/peer_valuation.md) and [comparison table](model_outputs/integrated/peer_comparison.csv): sourced annual growth/margins with explicit fiscal dates; no invented market/forward multiples.
 - [Price target / rating methodology](docs/price_target_framework.md), [dated price evidence](data/integrated/market_reference.json), [readiness/blocker output](model_outputs/integrated/valuation_readiness.json) and [thesis / risk framework](docs/investment_framework.md).
 
-**Validation: [132 tests passed and exact blockers](docs/integrated_validation.md).**
+**Validation: [136 tests passed and exact blockers](docs/integrated_validation.md).**
 
 The September 30, 2026 DCF uses information filed later on November 4 and is retrospective. No validated stock target is claimed. The original workbooks, verified historical CSVs, original scenario figures, dashboard and previous report are preserved.
 

@@ -4,24 +4,25 @@
 
 Ya-Cheng Hsieh (Erica Hsieh) | Research date: November 8, 2026
 
-INTEGRATED RESEARCH v2 • NOT RATED • TARGET / EQUITY VALUE BLOCKED
+INTEGRATED RESEARCH v2 • NOT RATED • NO PRICE TARGET
 
 ### Executive summary
-Arista's reported revenue increased from USD 5,860.2 million in FY2023 to USD 9,005.7 million in FY2025. In unaudited 9M2026 results, revenue reached USD 9,402.3 million. The research question is whether network demand and operating leverage can sustain economic cash generation as customer concentration, competitive intensity and reinvestment requirements evolve. [K, Item 8 p.69; Q, Part I Item 1 p.2]
+Arista combines accelerating revenue growth with substantial operating profitability. Reported FY2025 revenue grew 28.6% to 9,005.7; unaudited 9M2026 revenue rose 44.3% YoY to 9,402.3. The central research question is whether AI/cloud networking demand and operating leverage can sustain cash generation through customer spending cycles and rising investment requirements. Growth rates are analyst-derived from reported amounts. [K, Item 8 p.69; Q, Part I Item 1 p.2]
 
-Analyst interpretation: historical growth and profitability justify further research, but do not establish durable future margins or an attractive investment price. Three preliminary hypotheses concern AI networking demand, software-led repeat purchasing and operating leverage; each has explicit counterarguments on page 5, with catalysts and rating discipline on page 9.
+### Financial highlights — nine months ended September 30
+{{highlights}}
 
-{{summary}}
+Amounts are reported USD millions; margins and YoY changes are analyst-derived from unrounded figures. All comparisons above match 9M2026 with 9M2025. Operating-expense leverage offset gross-margin pressure, but OCF growth lagged revenue growth. This is a cash-conversion question, not evidence of a permanent deterioration. [Q, Item 1 pp.2,5; Item 2 pp.16,18–19]
 
-All scenario valuations are HYPOTHETICAL / NOT YET VALIDATED. Enterprise value is the modeled value of operating assets; it is neither equity value nor market capitalization. No investment rating, price target, upside/downside percentage or per-share valuation is assigned.
+### Research view and valuation status
+The preliminary case rests on AI networking demand, software-led repeat purchasing and operating leverage. The counter-case is concentrated customer spending, competitive pricing and working-capital absorption. Hypotheses and counterarguments appear on page 5; monitoring tests and rating discipline appear on page 9. [K, Item 1 pp.1–9; Q, Item 2 pp.14–19]
 
-### Valuation status: equity / per-share BLOCKED
-Reported liquidity does not establish excess cash. Operating liquidity, investment adjustments, additional nonoperating assets, aggregate claims and a defensible point-in-time diluted share count remain unresolved. The financial bridge is therefore deliberately incomplete. NOT RATED is not a Hold rating. [R2; U; page 10]
+Base/Bull/Bear FCFF DCF scenarios and sensitivity analysis are implemented (page 7). All scenario valuations are HYPOTHETICAL / NOT YET VALIDATED. Enterprise value represents operating assets, not equity value or market capitalization. Equity/per-share values and the twelve-month target remain BLOCKED by incomplete bridge, dilution and economic inputs; page 10 explains the precise gaps. No rating, target or upside/downside is assigned. [R1–R2; U]
 
-### Dates and evidence convention
-The DCF has a retrospective September 30, 2026 reference date and uses the 10-Q filed November 4, 2026. It is not a contemporaneously investable September 30 backtest. Research and source-review date: November 8, 2026 (US Eastern). A corroborated regular-session reference close of USD 170.80/share on November 6 is now available; it does not establish excess liquidity, dilution or a target. [M; U] [R1–R2]
+### Reference price, dates and evidence
+Reference close: USD 170.80/share on November 6, 2026, corroborated in two vendor historical tables. This observable price is available; it does not resolve the inputs required for a defensible target. The research date is November 8, 2026 (US Eastern). [M; U]
 
-Reported = SEC statement fact; management statement = issuer description or explanation; derived = analyst arithmetic; hypothetical = unvalidated forward assumption. Amounts are USD millions unless labeled otherwise. FY ends December 31; Q3 is July–September; 9M is January–September YTD. Sources K, Q, N, C, M and internal references R1–R4 / U are linked on page 10 and cited near relevant claims.
+The DCF uses a retrospective September 30, 2026 reference date with the 10-Q filed November 4; it is not a contemporaneously investable September backtest. Reported = SEC fact; management statement = issuer explanation; derived = analyst arithmetic; hypothetical = unvalidated assumption. USD millions unless otherwise labeled; FY ends December 31, Q3 is July–September, and 9M is January–September YTD. Sources are linked on page 10. [R1–R2]
 
 ---PAGE---
 # Business, demand and competition
@@ -59,14 +60,14 @@ Derived TTM income, October 1, 2025–September 30, 2026: revenue 11,890.1; oper
 
 ---PAGE---
 # Cash conversion and principal risks
-### Two analytical FCF definitions — do not splice
+### Cash generation: preserve the purchase definitions
 FCF below is analyst-derived: operating cash flow less the absolute purchase outflow. These measures are not FCFF and are not SEC-reported FCF line items. Annual purchases include property, equipment AND intangibles; interim purchases are PP&E-only. [K, Item 8 p.72 / local PDF p.76; Q, Item 1 p.5]
 
 {{cash}}
 
 {{cash_chart}}
 
-The cash-flow statement supplies 9M YTD amounts, not standalone Q3 cash flow. A reliable annual cash-intangible split is unavailable. Do not estimate Q3 cash flow from 9M alone or combine these definitions into unsupported TTM FCF. [R1–R2]
+Derived: 9M2026 OCF grew 27.9% versus revenue growth of 44.3%. Working-capital movements and customer acceptance affect timing; this comparison does not isolate normalized FCFF conversion. Cash flows are 9M YTD, not standalone Q3. The missing annual cash-intangible split prevents a consistent TTM FCF calculation. [Q pp.2,5,18–19; R1–R2]
 
 ### Risk assessment and monitoring priorities
 Customer concentration / spending: the two largest end customers represented 26% and 16% of FY2025 revenue; identities are not inferred. Large-customer spending and acceptance cycles can create volatility. Monitor diversification and accepted deployments rather than treating AI demand as assured revenue. [K, Item 1 p.7; Item 1A pp.14–15]
@@ -99,7 +100,7 @@ FY2026 is a partial-year estimate: 9M income, D&A and PP&E purchases are reporte
 {{forecast}}
 
 ### Explicit forecast mechanics
-FY2026 revenue = reported 9M2026 + derived Q4 FY2025 revenue × (1 + assumed Q4 growth). Q4 FY2025 revenue of 2,487.8 is FY2025 less 9M2025, not a separately reported line. Later years use scenario growth. EBIT = gross profit − OpEx; NOPAT = EBIT − modeled taxes. [K p.69; Q p.2; R1]
+FY2026 revenue = reported 9M2026 + derived Q4 FY2025 revenue × (1 + assumed Q4 growth). Q4 FY2025 revenue of 2,487.8 is FY2025 less 9M2025, not a separately reported line. Later years use scenario growth. EBIT (operating income) = gross profit − OpEx; NOPAT (after-tax operating profit) = EBIT − modeled taxes. [K p.69; Q p.2; R1]
 
 FCFF = EBIT × (1 − tax rate) + D&A − CapEx − change in operating NWC. No interest expense or dividend is subtracted. No SBC add-back or arbitrary repurchase outflow is added: compensation remains an operating cost. Existing awards still require a separate dilution/claim assessment to avoid double charging future service costs. [R1–R2]
 
@@ -128,7 +129,7 @@ Sensitivity values are enterprise values in USD millions. Only WACC and terminal
 
 The implied incremental return equals terminal growth / (net reinvestment / NOPAT), with net reinvestment = CapEx − D&A + change in NWC. It is not reported accounting ROIC. These high implied returns require validation; terminal growth and reinvestment are not independent free inputs. Terminal value represents roughly 69–84% of modeled EV across the cases, making mature economics particularly important. [R2; terminal_economics.csv; scenario_dcf.csv]
 
-No WACC components, current share price or industry benchmark are invented. The integrated review leaves the original scenario EVs unchanged; alternative CapEx-scope outputs are analytical illustrations, not a recalibrated recommendation. [R2]
+Original scenario EVs are unchanged. WACC and terminal economics still require evidence. Separate CapEx-scope alternatives isolate a modeling choice rather than establish a recommended valuation range. [R2; U]
 
 ---PAGE---
 # Peer comparison and valuation cross-check
@@ -139,12 +140,12 @@ Cisco is a direct networking competitor; NVIDIA supplies competing networking/pl
 
 Revenue and EBIT are reported; growth and operating margin are analyst-derived. All amounts are USD millions. Period ends differ: these are own-fiscal-year observations, not calendarized TTM comparisons or a rank of networking segment profitability. No direct valuation premium or discount is inferred. [K p.69; C p.57; N p.51]
 
-### Trading multiples: evidence gates
+### Trading multiples: required evidence
 {{peer_gates}}
 
-A quantitative DCF peer cross-check remains BLOCKED. A common-date market capitalization requires sourced prices and an appropriate dated share schedule; EV then requires consistently classified cash and claims. Calendarize financials and reconcile GAAP EBIT, pure D&A, SBC and acquisition effects before comparing EBITDA. Cisco's cash-flow depreciation/amortization/other line is not automatically pure D&A. [C, cash flows p.59; U]
+A quantitative DCF peer cross-check is unavailable with the current inputs. A common-date market capitalization requires sourced prices and an appropriate dated share schedule; EV then requires consistently classified cash and claims. Calendarize financials and reconcile GAAP EBIT, pure D&A, SBC and acquisition effects before comparing EBITDA. Cisco's cash-flow depreciation/amortization/other line is not automatically pure D&A. [C, cash flows p.59; U]
 
-No consensus forward EPS package, peer market multiples, median valuation, market-share estimate or price target is invented. Historical ANET DCF EV is not used as a trading EV. Obtain the missing dated inputs before weighting a peer cross-check. [U; docs/peer_valuation.md]
+The table supplies operating context, not a relative-value conclusion. Hypothetical ANET DCF EV is not a market trading EV; peer valuations cannot yet corroborate it. A numerical cross-check requires the missing dated market and forward-earnings inputs. [U; docs/peer_valuation.md]
 
 ---PAGE---
 # Thesis monitoring and twelve-month framework
@@ -154,23 +155,23 @@ Analyst hypothesis: headline growth and low historical combined cash purchases m
 {{catalysts}}
 
 ### Reference price, fair value and twelve-month target
-Corroborated vendor historical tables show ANET at USD 170.80 at the November 6, 2026 regular-session close, 16:00 America/New_York (EST), the latest completed session before the research date. Both tables also show September 30 close of USD 203.59. Use table closing prices, not intraday/after-hours banners. The official IR page did not render a numeric quote, so no exchange-feed certification is claimed. [M; U]
+The verified reference close is USD 170.80/share on November 6, 2026, at 16:00 America/New_York (EST), the latest completed session before the research date. Stock Analysis and ChartExchange historical tables corroborate it; this is vendor verification, not exchange-feed certification. Their September 30 close of USD 203.59/share is separate, same-date dilution context. Neither price establishes fair value. [M; U]
 
-The reference price is not a price target. September 30 retrospective operating EV is not November equity fair value or a November 8, 2027 target. A twelve-month framework must revalue remaining FCFF at the forward horizon and reconcile future cash/distributions, claims and dilution; do not mechanically roll an equity price forward at WACC. No target or upside/downside is calculated while these gates are unresolved. [U]
+A November 8, 2027 twelve-month target requires horizon-specific remaining FCFF, cash/distributions, claims and diluted shares. September 30 retrospective EV cannot be treated as November equity fair value or rolled into an equity target at WACC. The available reference close supplies the return denominator; the supported target numerator is still missing. [U]
 
 ### Transparent rating discipline — NOT RATED
 With supported valuation inputs and explicitly documented analyst-policy thresholds: Buy above the buy return hurdle; Sell below the sell hurdle; Hold between them, including boundaries. Price return = supported twelve-month target / dated reference close − 1; total return also requires distributions. No arbitrary numeric cutoffs are assigned. Thresholds and all economic evidence gates must be satisfied before a rating; NOT RATED is not Hold. [U; docs/price_target_framework.md]
 
-Conclusion: reported growth and operating leverage support further research, but unresolved economic assumptions, the equity bridge, award dilution and forward-horizon inputs prevent a defensible target or investment recommendation. [U]
+Conclusion: operating performance warrants further research; a price-based investment conclusion requires evidence-supported forecasts and a complete equity valuation. Retain NOT RATED until those conditions are met. [U]
 
 ---PAGE---
 # Limitations, sources and reproducibility
-### Equity / per-share valuation remains BLOCKED
+### Unresolved equity bridge and diluted-share inputs
 Reported September 30, 2026 cash is 2,288.1 and securities are 12,070.9; their 14,359.0 sum is not automatically excess liquidity. The 905.2 cash-equivalent investment subset is already within cash. Restricted cash of 1.5 sits outside this pool in other assets. Operating reserves, realization/restriction adjustments and eligible nonoperating assets remain unresolved. [Q, Item 1 p.1; Note 2 pp.7–8; R2]
 
 No separately disclosed funded borrowing is a limited classification, not proof of zero debt-like claims. Other current liabilities of 296.4 and long-term liabilities of 358.1 need operating/tax/debt-like classification. Other assets of 899.2 are not a validated nonoperating addition. Preferred/NCI zero components do not establish zero aggregate claims. Rent remains in EBIT; lease capitalization would require coordinated FCFF and WACC treatment. Avoid deducting operating liabilities in both NWC and the bridge. [Q pp.1,6; K Note 5 p.86; R2]
 
-September basic shares of 1,263.4 million and unvested RSUs of 24.3 million do not establish fully diluted shares. Q3/9M diluted EPS shares of 1,278.2/1,276.0 million are period averages. Award terms, vesting, proceeds and a dated economic dilution method remain unvalidated. No per-share valuation is supplied; dated reference closes are contextual (page 9). [Q pp.1,4; Notes 5–6 pp.11–12; R2]
+September basic shares of 1,263.4 million and unvested RSUs of 24.3 million do not establish fully diluted shares. Q3/9M diluted EPS shares of 1,278.2/1,276.0 million are period averages. Award terms, vesting, proceeds and a dated economic dilution method remain unvalidated. Together, these bridge and dilution gaps keep equity/per-share outputs BLOCKED. The USD 170.80 dated reference close is verified and available (page 9); the valuation inputs are incomplete. [Q pp.1,4; Notes 5–6 pp.11–12; R2]
 
 ### Source register — official links and internal audit trail
 {{sources}}
@@ -178,4 +179,4 @@ September basic shares of 1,263.4 million and unvested RSUs of 24.3 million do n
 ### Reproducibility and remaining research
 Editable source: reports/anet_integrated_research.md. Run the valuation module, integrated schedule module and scripts/build_integrated_report.py, then pytest. Install requirements-report.txt for PDF validation. Input-hash manifests, bridge ledger, dilution schedule, assumption matrix, peer table and readiness gates are included. The prior eight-page report is archived unchanged. Builds are offline. [U]
 
-This upgrade rechecked 24 annual and eight interim figures directly against official SEC HTML; all match the preserved CSVs. Other historical checks reuse existing snapshots; this is a scoped review, not an independent audit. Source page numbers are filing printed pages; K local PDF pages are printed page +4. Full FY2023 balance-sheet data is unavailable; interim cash flow is YTD only. Independent competitive economics, AI revenue attribution and defensible forward driver/WACC/dilution evidence remain open. No unsupported TTM FCF or TTM diluted EPS is calculated. This is a research process demonstration, not a completed investment recommendation. [R1–R4]
+This upgrade rechecked 24 annual and eight interim figures directly against official SEC HTML; all match the preserved CSVs. Other historical checks reuse existing snapshots; this is a scoped review, not an independent audit. Source page numbers are filing printed pages; K local PDF pages are printed page +4. Full FY2023 balance-sheet data is unavailable; interim cash flow is YTD only. Independent competitive economics, AI revenue attribution and defensible forward driver/WACC/dilution evidence remain open. No unsupported TTM FCF or TTM diluted EPS is calculated. Research conclusion: NOT RATED; unresolved economic and equity inputs preclude a price-based recommendation. [R1–R4]

@@ -33,10 +33,10 @@
     "model_outputs/sensitivity.csv": "e87a3a8ea4ebb93ebd3e2169c9cac4a340b15e03c10dd99b8bc3f6957c10e495",
     "model_outputs/terminal_economics.csv": "2601c25a33cb33b9067a8441de9816af2fd7511f2eb9a074d9b8b0b4e2ce3754",
     "reports/anet_equity_research.md": "f6138acef801cc58238c577d6dc45a22c530e253213805a6f40004a34674aaf1",
-    "reports/anet_integrated_research.md": "30bb7a5d0c9a3c5fc3bfa5551aa2a985b5762ed6cdcee8e2f95fb01a573929a9",
-    "scripts/build_integrated_report.py": "5353a4411c4db085fa74eb2a3bac948ce8eaeea6a47608c198d250c32c801a5e",
+    "reports/anet_integrated_research.md": "3aab5fcbbdd45646cbe703826e2310351b92aa54d87e8856f65b3cac8f012a2d",
+    "scripts/build_integrated_report.py": "68c6895d29cada74f24084e49fd04696e6adc994daa48b9ad37ad4e73abcb521",
     "scripts/build_research_report.py": "1360bfd4671367235a40eea9a113770b7c1028f1a580bbb5eafbf2add91497fd"
   },
-  "pdf_sha256": "183781b54cb35a1472c70e3aeeb4b690e42f6987a7da6b54068c5ee2e9aff767",
+  "pdf_sha256": "aafb1ca0f535616191289410302150e741cc6320a989f9b5c9b923622092408e",
   "status": "NOT RATED; target/equity/per-share BLOCKED; scenarios HYPOTHETICAL / NOT YET VALIDATED"
 }

@@ -5,7 +5,7 @@ Research date: November 8, 2026 (US Eastern).
 
 ## Validation
 
-- Complete suite: **132 passed**, including financial/dashboard, provenance,
+- Complete suite: **136 passed**, including financial/dashboard, provenance,
   FCFF/DCF, new dates/claims/dilution/rating controls and original/integrated PDF tests.
 - Dedicated SEC recheck: 24 annual + eight interim figures, all zero differences;
   this is scoped direct HTML inspection, not an independent audit of all data.
@@ -39,3 +39,16 @@ Annual combined property/equipment/intangible purchases cannot be numerically
 split from current evidence; interim purchases remain PP&E-only. CapEx alternatives
 stay separate; no unsupported TTM FCF or diluted EPS is introduced. A sourced price
 and correct arithmetic do not validate forward assumptions or a target.
+
+
+## Final editorial review (PR #6)
+
+The executive summary now leads with matched 9M financial highlights and the
+operating-leverage versus cash-growth debate. Revenue and operating-margin charts
+use separate labeled panels; cash-generation growth uses matched 9M periods,
+zero-based round-number axes and direct percentage labels. The available USD
+170.80 November 6 reference close is distinguished consistently from incomplete
+valuation inputs. Detailed bridge limitations are consolidated on page 10, with
+NOT RATED retained on the cover and conclusion. All ten pages, numeric tables,
+source locations and page references were reviewed. No financial input, model
+output, scenario assumption, archived report or investment conclusion changed.

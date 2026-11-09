@@ -39,4 +39,4 @@ source/assumption distinctions. Nothing in this report is a validated stock targ
 All ten pages are rendered and visually reviewed for glyphs, chart/table contrast,
 clipping, overflow, blank pages and readable type. Automated tests validate page
 bounds, counts, citations, displayed values, archive identity and deterministic
-rebuild. Temporary preview images stay outside Git. Full suite: **132 passed**; see [validation and blockers](../docs/integrated_validation.md). Tests do not establish forecast or investment validity.
+rebuild. Temporary preview images stay outside Git. Full suite: **136 passed**; see [validation and blockers](../docs/integrated_validation.md). Tests do not establish forecast or investment validity.
