@@ -1,0 +1,10 @@
+{
+  "reference_date": "2026-09-30",
+  "inputs": {
+    "excess_cash": {"value": null, "validated": false, "units": "USD millions", "source_reference": "", "reason": "Reported cash is available, but required operating cash and other adjustments have not been validated."},
+    "nonoperating_investments": {"value": null, "validated": false, "units": "USD millions", "source_reference": "", "reason": "Marketable securities are reported, but eligibility, taxes and overlap with excess cash need validation."},
+    "debt_and_debt_like": {"value": null, "validated": false, "units": "USD millions", "source_reference": "", "reason": "Debt, leases and other debt-like claims require a sourced classification review; no assumption of zero debt."},
+    "other_equity_claims": {"value": null, "validated": false, "units": "USD millions", "source_reference": "", "reason": "Minority interests and other adjustments require validation, including any justified zero values."},
+    "diluted_shares": {"value": null, "validated": false, "units": "million shares", "source_reference": "", "reason": "Period weighted-average diluted EPS shares are not a validated point-in-time fully diluted valuation denominator."}
+  }
+}
