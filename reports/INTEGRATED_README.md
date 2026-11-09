@@ -2,7 +2,7 @@
 
 - [Latest PDF](ANET_Integrated_Equity_Research_v2.pdf): ten A4 pages; Ya-Cheng Hsieh (Erica Hsieh); research date November 8, 2026, US Eastern.
 - [Editable Markdown](anet_integrated_research.md), [builder](../scripts/build_integrated_report.py), [fingerprints](integrated_report_manifest.json).
-- [Archived eight-page v1 PDF](archive/v1_ANET_Equity_Research_2026-11-08.pdf) and [archived source](archive/v1_anet_equity_research.md) are byte-identical to the previous versions. The original paths and renderer remain available too. The archived v1 manifest is a baseline record, not the current integrated manifest; its paths are relative to the repository root at v1.
+- [Archived eight-page v1 PDF](archive/v1_ANET_Equity_Research_2026-11-08.pdf) and [archived source](archive/v1_anet_equity_research.md) are byte-identical to the previous versions. The original editable source and renderer remain available; the legacy builder now writes the PDF directly to the archive, and `report_manifest.json` records its current output path. The redundant root-level v1 PDF has been removed only after a byte-for-byte archive comparison. The archived v1 manifest is a baseline record, not the current integrated manifest; its paths are relative to the repository root at v1.
 
 ## Reproduce
 

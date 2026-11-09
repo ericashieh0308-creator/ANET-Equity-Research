@@ -2,10 +2,10 @@
   "research_date": "2026-11-08",
   "main_baseline": "ef5c8b0",
   "source": "reports/anet_equity_research.md",
-  "pdf": "reports/ANET_Equity_Research_2026-11-08.pdf",
+  "pdf": "reports/archive/v1_ANET_Equity_Research_2026-11-08.pdf",
   "input_sha256": {
     "reports/anet_equity_research.md": "f6138acef801cc58238c577d6dc45a22c530e253213805a6f40004a34674aaf1",
-    "scripts/build_research_report.py": "1360bfd4671367235a40eea9a113770b7c1028f1a580bbb5eafbf2add91497fd",
+    "scripts/build_research_report.py": "f228b4ff679adb133ceab526d4ee0b838a9ddce3b0636212db52b57fa1c7f13f",
     "data/verified_2023_2025.csv": "ee4a83d5039e1bc4786a7f2784fd24ac63ce712525e3697945472e03046f6f82",
     "data/quarterly/anet_20260930_metrics.csv": "f89f026adf00d0e0f8063e9efbd922f26d763a52c4c8462f231f57c0034ccbc2",
     "data/valuation/assumptions.json": "1529178804d715ff58e17a5ec0742f5b6e4b31c1fd7935a0e29b32260c2d5a7b",

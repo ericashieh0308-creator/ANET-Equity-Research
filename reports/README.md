@@ -1,17 +1,25 @@
-# Portfolio report — build and review
+# Reports — latest edition and archived v1
 
-- PDF: [ANET_Equity_Research_2026-11-08.pdf](ANET_Equity_Research_2026-11-08.pdf), eight A4 pages.
+**[Latest report: ANET Integrated Equity Research v2](ANET_Integrated_Equity_Research_v2.pdf)** — ten A4 pages. See the [V2 build guide](INTEGRATED_README.md).
+
+Only the latest PDF is stored directly in `reports/`; previous PDFs live in `reports/archive/`.
+
+## Archived eight-page v1: source and reproduction
+
+- PDF: [Archived eight-page report](archive/v1_ANET_Equity_Research_2026-11-08.pdf).
 - Editable narrative/layout source: [anet_equity_research.md](anet_equity_research.md).
 - Builder: [scripts/build_research_report.py](../scripts/build_research_report.py).
 - Input/output fingerprints: [report_manifest.json](report_manifest.json).
 
-From the repository root:
+To rebuild the archived v1 from the repository root:
 
 ```bash
 python -m pip install -r requirements-report.txt
 python scripts/build_research_report.py
 python -m pytest -q
 ```
+
+The legacy builder writes directly to `reports/archive/v1_ANET_Equity_Research_2026-11-08.pdf` and refreshes `reports/report_manifest.json`; it never recreates the redundant PDF in `reports/`. The archived `v1_report_manifest.json` remains the unchanged historical baseline.
 
 The builder runs offline using the existing annual/interim CSVs and valuation outputs.
 It does not rerun/recalibrate valuations or modify protected financial inputs.
@@ -37,7 +45,7 @@ the sourced draft and evidence audit; no new external claims or downloads are in
 Automated report tests check the eight-page structure, required disclosures, source
 URLs, table values, readable white header glyphs, embedded fonts, page boundaries,
 input/output hashes and deterministic rebuild. The complete financial model suite
-continues to apply. Final validation: **90 tests passed**, including three PDF/report tests. Install the report dependencies to run these tests; they skip
+continues to apply. At the original v1 release, **90 tests passed**, including three PDF/report tests. Install the report dependencies to run these tests; they skip
 explicitly when optional PDF packages are absent.
 
 Rendered all eight pages at native A4 size and inspected each, including the

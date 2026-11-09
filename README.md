@@ -10,6 +10,8 @@ The report covers business and AI networking, financial performance, preliminary
 
 [Editable v2 source](reports/anet_integrated_research.md) · [Build / validation guide](reports/INTEGRATED_README.md) · [Previous 8-page report (archived)](reports/archive/v1_ANET_Equity_Research_2026-11-08.pdf)
 
+Only the latest PDF is kept directly in `reports/`; prior PDFs are preserved in `reports/archive/`. The [report directory guide](reports/README.md) documents both renderers.
+
 ### Evidence and valuation deliverables
 
 - [Integrated methodology](docs/integrated_valuation_methodology.md): scoped direct SEC rechecks, classification policy, NWC/CapEx/SBC limits and unchanged scenario EVs.

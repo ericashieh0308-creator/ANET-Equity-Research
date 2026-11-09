@@ -18,7 +18,7 @@ from reportlab.graphics.shapes import Drawing, Rect, String, Line
 
 OUT = ROOT / 'reports'
 SOURCE = OUT / 'anet_equity_research.md'
-PDF = OUT / 'ANET_Equity_Research_2026-11-08.pdf'
+PDF = OUT / 'archive/v1_ANET_Equity_Research_2026-11-08.pdf'
 NAVY = colors.HexColor('#15324F')
 TEAL = colors.HexColor('#147D85')
 GRAY = colors.HexColor('#526171')
@@ -171,6 +171,7 @@ def footer(canvas, doc):
 
 
 def build():
+    PDF.parent.mkdir(parents=True, exist_ok=True)
     setup_fonts();c=components();story=[]
     pages=SOURCE.read_text().split('---PAGE---')
     if len(pages)!=8:raise ValueError('Report must have eight explicit pages.')

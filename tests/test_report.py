@@ -11,7 +11,7 @@ import pytest
 pdf = pytest.importorskip('pymupdf', reason='Install requirements-report.txt for PDF validation')
 pytest.importorskip('reportlab', reason='Install requirements-report.txt for report generation')
 ROOT = Path(__file__).resolve().parents[1]
-PATH = ROOT/'reports/ANET_Equity_Research_2026-11-08.pdf'
+PATH = ROOT/'reports/archive/v1_ANET_Equity_Research_2026-11-08.pdf'
 
 
 def test_report_pages_glyphs_bounds_and_headers():
@@ -64,7 +64,10 @@ def test_report_manifest_and_deterministic_rebuild():
     manifest=json.loads((ROOT/'reports/report_manifest.json').read_text())
     for name,digest in manifest['input_sha256'].items():
         assert hashlib.sha256((ROOT/name).read_bytes()).hexdigest()==digest,name
+    assert manifest['pdf'] == str(PATH.relative_to(ROOT))
     before=PATH.read_bytes()
     assert hashlib.sha256(before).hexdigest()==manifest['pdf_sha256']
     subprocess.run([sys.executable,str(ROOT/'scripts/build_research_report.py')],cwd=ROOT,check=True,capture_output=True)
     assert PATH.read_bytes()==before
+    assert not (ROOT/'reports/ANET_Equity_Research_2026-11-08.pdf').exists()
+    assert sorted(p.name for p in (ROOT/'reports').glob('*.pdf')) == ['ANET_Integrated_Equity_Research_v2.pdf']
