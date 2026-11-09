@@ -1,0 +1,62 @@
+EDGAR Filing Documents for 0001596532-26-000254 (https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/0001596532-26-000254-index.html)
+【turn986298view0】 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"turn714929view1","lineno":10}); Total lines: 59
+L0: 【0†iframe†www.googletagmanager.com】
+L1: 
+L2: This page uses Javascript. Your browser either doesn't support Javascript or you have it turned off. To see this page as it is meant to appear please use a Javascript enabled browser.
+L3: # Filing Detail
+L4: 
+L5:   * 【1†SEC Home】 »
+L6:   * 【2†Company Search】 »
+L7:   * Current Page
+L8: 
+L9: Form 10-Q - Quarterly report [Sections 13 or 15(d)]
+L10: 
+L11: SEC Accession No. 0001596532-26-000254
+L12: 
+L13: Filing Date
+L14: 
+L15: 2026-11-04
+L16: 
+L17: Accepted
+L18: 
+L19: 2026-11-03 18:50:52
+L20: 
+L21: Documents
+L22: 
+L23: 56
+L24: 
+L25: Period of Report
+L26: 
+L27: 2026-09-30
+L28: 
+L29: 【3† Interactive Data】
+L30: 
+L31: Document Format Files
+L32: Seq  | Description  | Document  | Type  | Size
+L33: --- | --- | --- | --- | ---
+L34: 1  | 10-Q  | 【4†anet-20260930.htm】   iXBRL  | 10-Q  | 1376621
+L35: 2  | EX-31.1  | 【5†ex311_q32026xceocertificat.htm】  | EX-31.1  | 10079
+L36: 3  | EX-31.2  | 【6†ex312_q32026xcfocertificat.htm】  | EX-31.2  | 10124
+L37: 4  | EX-32.1  | 【7†ex321_q32026xceoandcfo906c.htm】  | EX-32.1  | 7851
+L38:    | Complete submission text file  | 【8†0001596532-26-000254.txt】  |    | 5949482
+L39: 
+L40: Data Files
+L41: Seq  | Description  | Document  | Type  | Size
+L42: --- | --- | --- | --- | ---
+L43: 5  | XBRL TAXONOMY EXTENSION SCHEMA DOCUMENT  | 【9†anet-20260930.xsd】  | EX-101.SCH  | 27443
+L44: 6  | XBRL TAXONOMY EXTENSION CALCULATION LINKBASE DOCUMENT  | 【10†anet-20260930_cal.xml】  | EX-101.CAL  | 61153
+L45: 7  | XBRL TAXONOMY EXTENSION DEFINITION LINKBASE DOCUMENT  | 【11†anet-20260930_def.xml】  | EX-101.DEF  | 122458
+L46: 8  | XBRL TAXONOMY EXTENSION LABEL LINKBASE DOCUMENT  | 【12†anet-20260930_lab.xml】  | EX-101.LAB  | 459491
+L47: 9  | XBRL TAXONOMY EXTENSION PRESENTATION LINKBASE DOCUMENT  | 【13†anet-20260930_pre.xml】  | EX-101.PRE  | 296938
+L48: 60  | EXTRACTED XBRL INSTANCE DOCUMENT  | 【14†anet-20260930_htm.xml】  | XML  | 858791
+L49: Mailing Address 5453 GREAT AMERICA PARKWAY SANTA CLARA CA 95054
+L50: 
+L51: Business Address 5453 GREAT AMERICA PARKWAY SANTA CLARA CA 95054 408-547-5500
+L52: 
+L53: Arista Networks, Inc. (Filer) CIK: 【15†0001596532 (see all company filings)】
+L54: 
+L55: EIN.: 201751121 | State of Incorp.: DE | Fiscal Year End: 1231
+L56: Type: 10-Q | Act: 34 | File No.: 【16†001-36468】 | Film No.: 261519544
+L57: SIC: 【17†3576】 Computer Communications Equipment
+L58: (CF Office: 06 Technology)
+

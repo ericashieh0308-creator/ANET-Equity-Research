@@ -115,3 +115,40 @@ outflow in this mode. Exports include the definition and source references.
 The full 2023 balance sheet is unavailable; 2024–2025 balance sheets are present on
 PDF p.72 but were not reconciled in this extension. Missing figures remain blank.
 Tests now also include regression checks against locally reviewed ANET figures.
+
+### Q3 / 9M 2026 Form 10-Q and TTM income
+
+Select **2026 Q3 / 9M 10-Q** in the existing data-source selector. The default
+Excel view, annual local 10-K view and user-attested CSV workflow are preserved.
+Separate tabs compare Q3 2026 with Q3 2025 and 9M 2026 with 9M 2025, with revenue,
+gross profit, operating income, net income, diluted EPS and matched-period YoY.
+The nine-month cash-flow section is explicitly YTD; no Q3 cash flows are inferred.
+
+`anet_research/interim.py` checks the saved official-source hashes, reconciles
+all interim statement CSV rows and metrics to the captured filing, and checks
+arithmetic before making data available to the view. Annual TTM inputs must
+match the previously reviewed annual CSV fingerprint. Missing/unverified inputs,
+invalid periods, incompatible units and duplicate required periods block the
+corresponding TTM calculation. These are local provenance checks, not an SEC audit.
+
+TTM income covers October 1, 2025–September 30, 2026 and uses
+**FY2025 + 9M2026 − 9M2025**, with no annualization. Only additive USD-million
+income metrics are calculated. TTM diluted EPS is deliberately unavailable:
+reported EPS is rounded to cents and period-specific diluted weighted-average
+share counts differ. Summing EPS or using the latest quarter's share count as
+a TTM denominator is not validated. Reported Q3/9M EPS and its YoY growth remain
+available, with a rounding caveat.
+
+**TTM FCF is blocked** until annual and interim CapEx definitions are reconciled.
+The annual series includes property, equipment **and intangible** purchases;
+the 10-Q line is **purchases of property and equipment**. Only 9M PP&E-only
+analytical FCF is shown. Its formula subtracts the purchase outflow magnitude,
+while signed source values are preserved.
+
+The view includes official source links, filing-page citations, provenance,
+balance sheets, statement exports, matched-period growth exports, 9M cash-flow
+exports and a separate TTM export with input amounts and explicit unavailable
+statuses. Growth ratios are fractions in exports and percentages on screen.
+See [the TTM methodology and results](docs/q3_2026_ttm_dashboard.md),
+[the interim source reconciliation](docs/q3_2026_source_reconciliation.md), and
+[the annual reconciliation](docs/reconciliation_2023_2025.md).

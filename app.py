@@ -9,6 +9,8 @@ import streamlit as st
 from anet_research.financials import FINANCIAL_FIELDS, calculate_metrics
 from anet_research.excel import WORKBOOK, load_historical_workbook
 from anet_research.sec import FCF_LABEL, load_verified_metrics, reconciliation
+from anet_research.interim import VIEW
+from anet_research.interim_view import render_interim
 
 TEMPLATE = Path(__file__).parent / "data" / "annual_financials_template.csv"
 RATIOS = ["revenue_growth_yoy", "gross_profit_margin", "operating_profit_margin",
@@ -16,15 +18,20 @@ RATIOS = ["revenue_growth_yoy", "gross_profit_margin", "operating_profit_margin"
 
 st.set_page_config(page_title="ANET | Financial Research", page_icon="📊", layout="wide")
 st.title("ANET · Financial Research")
-st.caption("Arista Networks | Annual financial statements | USD millions")
-st.info("Workbook figures and derived ratios are UNVERIFIED until checked against SEC 10-K filings. CSV verification is a user attestation. No investment recommendations are generated.")
+st.caption("Arista Networks | Financial statements | USD millions unless noted")
 with st.sidebar:
-    st.header("Annual statements")
-    source_mode = st.radio("Data source", ["Existing Excel model (unverified)", "Verified CSV", "Verified local 2025 Form 10-K"])
+    st.header("Financial statements")
+    source_mode = st.radio("Data source", ["Existing Excel model (unverified)", "Verified CSV", "Verified local 2025 Form 10-K", VIEW])
     st.download_button("Download blank CSV template", TEMPLATE.read_bytes(),
                        "annual_financials_template.csv", "text/csv")
     uploaded = st.file_uploader("Upload verified annual data", type=["csv"]) if source_mode == "Verified CSV" else None
-    st.caption("All amounts: USD millions. Capex: positive cash outflow. Include an SEC URL and 10-K page/table reference for each populated year.")
+    st.caption("CSV imports use USD millions and capex as a positive outflow, with an SEC URL and filing page/table reference. Source statement exports retain reported signs.")
+
+if source_mode == VIEW:
+    render_interim()
+    st.stop()
+
+st.info("Workbook figures and derived ratios are UNVERIFIED until checked against SEC 10-K filings. CSV verification is a user attestation. No investment recommendations are generated.")
 
 try:
     audit = None

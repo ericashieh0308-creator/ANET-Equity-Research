@@ -1,0 +1,29 @@
+{
+  "issuer": "Arista Networks, Inc.",
+  "form": "10-Q",
+  "accession": "0001596532-26-000254",
+  "filing_date": "2026-11-04",
+  "accepted": "2026-11-03 18:50:52",
+  "report_period_end": "2026-09-30",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/anet-20260930.htm",
+  "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/0001596532-26-000254-index.html",
+  "source_capture_format": "Complete web-reader rendered text, lines 0\u20131909; not original HTML",
+  "source_capture_sha256": "9fbb8b9389ca7ec895d9608ba1efbe47d40ac01e15c2fb118feab8e2f7b7450d",
+  "filing_index_capture_sha256": "f95f0d0657add13cc34640da7071c3fdb75874233fefd431978e18dd487090bd",
+  "financial_section": "Part I, Item 1, Financial Statements (Unaudited)",
+  "printed_pages": {
+    "income_statement": 2,
+    "balance_sheet": 1,
+    "cash_flow_statement": 5
+  },
+  "missing_value_policy": "Blank CSV fields mean not reported; em dash means reported nil (numeric zero), with original symbol retained.",
+  "standalone_q3_cash_flows_available": false,
+  "fcf_definition": "Analytical FCF after purchases of property and equipment (PP&E-only) = operating cash flow - abs(signed PP&E purchases)",
+  "annual_series_policy": "Separate from 2023\u20132025 annual FCF after property, equipment and intangible purchases; no concatenation or annual changes.",
+  "protected_file_sha256": {
+    "ANET_Financial Model.xlsx": "571b693f69a6644c5cab649b169f191ab404f69c90c8d55e733dd827c07ad5b3",
+    "data/source/ANET_Financial Model.xlsx": "571b693f69a6644c5cab649b169f191ab404f69c90c8d55e733dd827c07ad5b3",
+    "data/verified_2023_2025.csv": "ee4a83d5039e1bc4786a7f2784fd24ac63ce712525e3697945472e03046f6f82",
+    "app.py": "76f5e79c577a9cd5c73e1303d8ba5abf98a7826ded652a3a1aad64a229a254fc"
+  }
+}
