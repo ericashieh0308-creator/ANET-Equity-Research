@@ -1,6 +1,12 @@
 # ANET-Equity-Research
 Equity research and financial analysis of Arista Networks (ANET), including valuation models and a Python dashboard.
 
+## Portfolio research report
+
+**[Read the 8-page Equity Research & Scenario-Based DCF Valuation report](reports/ANET_Equity_Research_2026-11-08.pdf)** — by Ya-Cheng Hsieh (Erica Hsieh), research date November 8, 2026. Sourced ANET financial analysis, preliminary investment hypotheses, driver-based FCFF scenarios and sensitivity analysis demonstrate a reproducible equity research workflow. All scenario valuations are hypothetical; equity/per-share valuation remains **BLOCKED**, with no recommendation or price target.
+
+[Editable report source](reports/anet_equity_research.md) · [Build and validation instructions](reports/README.md)
+
 ## Financial analysis dashboard (v1)
 
 An annual statement analysis tool built with Python, pandas, Plotly and Streamlit.

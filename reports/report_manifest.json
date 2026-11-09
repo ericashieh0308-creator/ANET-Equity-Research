@@ -1,0 +1,23 @@
+{
+  "research_date": "2026-11-08",
+  "main_baseline": "ef5c8b0",
+  "source": "reports/anet_equity_research.md",
+  "pdf": "reports/ANET_Equity_Research_2026-11-08.pdf",
+  "input_sha256": {
+    "reports/anet_equity_research.md": "f6138acef801cc58238c577d6dc45a22c530e253213805a6f40004a34674aaf1",
+    "scripts/build_research_report.py": "1360bfd4671367235a40eea9a113770b7c1028f1a580bbb5eafbf2add91497fd",
+    "data/verified_2023_2025.csv": "ee4a83d5039e1bc4786a7f2784fd24ac63ce712525e3697945472e03046f6f82",
+    "data/quarterly/anet_20260930_metrics.csv": "f89f026adf00d0e0f8063e9efbd922f26d763a52c4c8462f231f57c0034ccbc2",
+    "data/valuation/assumptions.json": "1529178804d715ff58e17a5ec0742f5b6e4b31c1fd7935a0e29b32260c2d5a7b",
+    "model_outputs/forecasts.csv": "620ef6a89992f57728a830ceaf792676440a2e57fc6ecfc9ddb7158fb286f219",
+    "model_outputs/scenario_dcf.csv": "6456f4f77580637bb40885499bbfc232c20f09078f9c39a7b0c8891308740b21",
+    "model_outputs/sensitivity.csv": "e87a3a8ea4ebb93ebd3e2169c9cac4a340b15e03c10dd99b8bc3f6957c10e495",
+    "model_outputs/terminal_economics.csv": "2601c25a33cb33b9067a8441de9816af2fd7511f2eb9a074d9b8b0b4e2ce3754",
+    "docs/investment_thesis.md": "278ceddbd647028e362615a73fe5616d7327c150fda5dcae8ba92602b185b516",
+    "docs/forecast_dcf_methodology.md": "334899b260e5db4fa33aa3ff72486a66a6f260d6558abaad49a8a1fce42fcc24",
+    "docs/valuation_evidence_review.md": "5bf6d5bd1a1430691b553c6134e8ff2b877cbecbad1487ee32d07bad4b41c4f0",
+    "docs/q3_2026_ttm_dashboard.md": "eb9df1449e4f2ad6fc4fe3fd83fa283c947eb5454343be41f053062b880d0ce2"
+  },
+  "pdf_sha256": "0a6ab941f12c2c71627dd844f76993893c9606f298d54bf16fe8553e773eed0a",
+  "evidence_policy": "Existing repository sources only; all forward cases hypothetical; equity/per-share BLOCKED."
+}
