@@ -1,0 +1,16 @@
+scenario,fiscal_year,dcf_period,dcf_included_fcff,discount_years,status,valuation_reference_date,units,discount_factor,pv_fcff
+Base,2026,Q4 stub only,956.060308,0.25,HYPOTHETICAL / NOT YET VALIDATED,2026-09-30,USD millions; discount years in years,0.9764540897,933.5489977
+Base,2027,Full forecast year,4658.297242,1.25,HYPOTHETICAL / NOT YET VALIDATED,2026-09-30,USD millions; discount years in years,0.8876855361,4135.103084
+Base,2028,Full forecast year,5449.115984,2.25,HYPOTHETICAL / NOT YET VALIDATED,2026-09-30,USD millions; discount years in years,0.806986851,4397.364949
+Base,2029,Full forecast year,6157.599323,3.25,HYPOTHETICAL / NOT YET VALIDATED,2026-09-30,USD millions; discount years in years,0.73362441,4517.36517
+Base,2030,Full forecast year,6805.02112,4.25,HYPOTHETICAL / NOT YET VALIDATED,2026-09-30,USD millions; discount years in years,0.6669312818,4538.481458
+Bull,2026,Q4 stub only,1290.25552,0.25,HYPOTHETICAL / NOT YET VALIDATED,2026-09-30,USD millions; discount years in years,0.9786859993,1262.755013
+Bull,2027,Full forecast year,5515.859712,1.25,HYPOTHETICAL / NOT YET VALIDATED,2026-09-30,USD millions; discount years in years,0.8978770636,4952.563921
+Bull,2028,Full forecast year,6881.694843,2.25,HYPOTHETICAL / NOT YET VALIDATED,2026-09-30,USD millions; discount years in years,0.8237404253,5668.730237
+Bull,2029,Full forecast year,8311.830675,3.25,HYPOTHETICAL / NOT YET VALIDATED,2026-09-30,USD millions; discount years in years,0.7557251608,6281.459574
+Bull,2030,Full forecast year,9708.431695,4.25,HYPOTHETICAL / NOT YET VALIDATED,2026-09-30,USD millions; discount years in years,0.6933258356,6731.106517
+Bear,2026,Q4 stub only,455.994432,0.25,HYPOTHETICAL / NOT YET VALIDATED,2026-09-30,USD millions; discount years in years,0.9720654209,443.2564195
+Bear,2027,Full forecast year,3477.060787,1.25,HYPOTHETICAL / NOT YET VALIDATED,2026-09-30,USD millions; discount years in years,0.8679155544,3017.795141
+Bear,2028,Full forecast year,3781.931186,2.25,HYPOTHETICAL / NOT YET VALIDATED,2026-09-30,USD millions; discount years in years,0.7749246021,2930.71152
+Bear,2029,Full forecast year,4038.223147,3.25,HYPOTHETICAL / NOT YET VALIDATED,2026-09-30,USD millions; discount years in years,0.6918969662,2794.034344
+Bear,2030,Full forecast year,4231.47825,4.25,HYPOTHETICAL / NOT YET VALIDATED,2026-09-30,USD millions; discount years in years,0.6177651484,2614.059789

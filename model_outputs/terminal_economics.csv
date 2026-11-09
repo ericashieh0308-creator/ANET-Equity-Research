@@ -1,0 +1,4 @@
+scenario,status,terminal_growth,terminal_nopat,terminal_da,terminal_capex,terminal_change_nwc,terminal_fcff,terminal_net_reinvestment,terminal_reinvestment_rate,implied_terminal_incremental_roc,terminal_economic_status
+Base,HYPOTHETICAL / NOT YET VALIDATED,0.03,7660.536507,200.8881951,669.627317,58.51112479,7133.28626,527.2502467,0.06882680426,0.4358766954,UNVALIDATED implied incremental return; not reported ROIC
+Bull,HYPOTHETICAL / NOT YET VALIDATED,0.035,11010.33955,270.3029349,901.0097831,81.25047964,10298.38222,711.9573278,0.06466261323,0.5412710414,UNVALIDATED implied incremental return; not reported ROIC
+Bear,HYPOTHETICAL / NOT YET VALIDATED,0.02,4806.31947,145.9408746,567.5478457,34.97493727,4349.737562,456.5819083,0.09499616311,0.2105348189,UNVALIDATED implied incremental return; not reported ROIC

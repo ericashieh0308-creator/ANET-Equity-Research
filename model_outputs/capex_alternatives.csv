@@ -1,0 +1,7 @@
+scenario,treatment,status,intangible_budget_ratio,enterprise_value,value_per_share,scope_note
+Base,EXTRA_INTANGIBLE_BUDGET,HYPOTHETICAL / NOT YET VALIDATED,0.005,86484.88864,,Current scenario: additional budget not observed intangible cash
+Base,PP&E_ONLY_SCOPE,HYPOTHETICAL / NOT YET VALIDATED,0,87846.80754,,"Intangible reinvestment deliberately omitted, NOT assumed reported zero; incomplete total FCFF if intangible investment required"
+Bull,EXTRA_INTANGIBLE_BUDGET,HYPOTHETICAL / NOT YET VALIDATED,0.005,154717.2418,,Current scenario: additional budget not observed intangible cash
+Bull,PP&E_ONLY_SCOPE,HYPOTHETICAL / NOT YET VALIDATED,0,156984.9649,,"Intangible reinvestment deliberately omitted, NOT assumed reported zero; incomplete total FCFF if intangible investment required"
+Bear,EXTRA_INTANGIBLE_BUDGET,HYPOTHETICAL / NOT YET VALIDATED,0.005,38671.01992,,Current scenario: additional budget not observed intangible cash
+Bear,PP&E_ONLY_SCOPE,HYPOTHETICAL / NOT YET VALIDATED,0,39401.00289,,"Intangible reinvestment deliberately omitted, NOT assumed reported zero; incomplete total FCFF if intangible investment required"

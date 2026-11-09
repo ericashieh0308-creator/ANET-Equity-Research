@@ -1,0 +1,213 @@
+[
+  {
+    "id": "cash_and_equivalents",
+    "value": 2288.1,
+    "units": "USD millions",
+    "reporting_date": "2026-09-30",
+    "classification": "REPORTED",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/anet-20260930.htm",
+    "source_reference": "10-Q Part I Item 1 balance sheet p.1",
+    "snapshot_line": 110,
+    "scope": "Excludes the separate restricted cash and marketable securities balances."
+  },
+  {
+    "id": "marketable_securities",
+    "value": 12070.9,
+    "units": "USD millions",
+    "reporting_date": "2026-09-30",
+    "classification": "REPORTED",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/anet-20260930.htm",
+    "source_reference": "10-Q balance sheet p.1; Note 2 pp.7\u20138",
+    "snapshot_line": 111,
+    "scope": "Fair-value portfolio, separate from cash; debt securities are assets, not ANET borrowing."
+  },
+  {
+    "id": "restricted_cash",
+    "value": 1.5,
+    "units": "USD millions",
+    "reporting_date": "2026-09-30",
+    "classification": "REPORTED",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/anet-20260930.htm",
+    "source_reference": "10-Q Note 2 p.7",
+    "snapshot_line": 409,
+    "scope": "Other assets; excluded from the cash pool. Do not subtract again from balance-sheet cash."
+  },
+  {
+    "id": "cash_equivalent_investments_subset",
+    "value": 905.2,
+    "units": "USD millions",
+    "reporting_date": "2026-09-30",
+    "classification": "REPORTED",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/anet-20260930.htm",
+    "source_reference": "10-Q Note 2 p.7",
+    "snapshot_line": 398,
+    "scope": "Subset already inside cash equivalents; never add to cash a second time."
+  },
+  {
+    "id": "basic_shares_point_in_time",
+    "value": 1263.4,
+    "units": "million shares",
+    "reporting_date": "2026-09-30",
+    "classification": "REPORTED",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/anet-20260930.htm",
+    "source_reference": "10-Q balance sheet p.1; stockholders equity p.4",
+    "snapshot_line": 143,
+    "scope": "September 30 issued/outstanding shares, rounded to 0.1 million; not a diluted denominator."
+  },
+  {
+    "id": "unvested_rsus",
+    "value": 24.3,
+    "units": "million shares",
+    "reporting_date": "2026-09-30",
+    "classification": "REPORTED",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/anet-20260930.htm",
+    "source_reference": "10-Q Note 5 p.11",
+    "snapshot_line": 584,
+    "scope": "Outstanding awards, not automatically incremental diluted shares; service, vesting, tax, ESPP/options and valuation method unresolved."
+  },
+  {
+    "id": "q3_weighted_average_diluted_shares",
+    "value": 1278.2,
+    "units": "million shares",
+    "reporting_date": "2026-07-01/2026-09-30",
+    "classification": "REPORTED",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/anet-20260930.htm",
+    "source_reference": "10-Q income p.2; Note 6 pp.11\u201312",
+    "snapshot_line": 192,
+    "scope": "Period average; explicitly rejected as point-in-time valuation shares."
+  },
+  {
+    "id": "nine_month_weighted_average_diluted_shares",
+    "value": 1276.0,
+    "units": "million shares",
+    "reporting_date": "2026-01-01/2026-09-30",
+    "classification": "REPORTED",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/anet-20260930.htm",
+    "source_reference": "10-Q income p.2; Note 6 pp.11\u201312",
+    "snapshot_line": 192,
+    "scope": "Period average; explicitly rejected as point-in-time valuation shares."
+  },
+  {
+    "id": "preferred_equity_claim",
+    "value": 0,
+    "units": "USD millions",
+    "reporting_date": "2026-09-30",
+    "classification": "REPORTED",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/anet-20260930.htm",
+    "source_reference": "10-Q balance sheet p.1",
+    "snapshot_line": 142,
+    "scope": "No issued/outstanding preferred stock; source dash means nil."
+  },
+  {
+    "id": "noncontrolling_interest_claim",
+    "value": 0,
+    "units": "USD millions",
+    "reporting_date": "2026-09-30",
+    "classification": "ANALYST_DERIVED_ZERO",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/anet-20260930.htm",
+    "source_reference": "10-Q Note 1 p.6 and balance sheet p.1",
+    "snapshot_line": 358,
+    "scope": "Consolidated subsidiaries described as wholly owned and no NCI equity line. Not proof that all other claims are zero."
+  },
+  {
+    "id": "separately_disclosed_funded_borrowings",
+    "value": 0,
+    "units": "USD millions",
+    "reporting_date": "2026-09-30",
+    "classification": "ANALYST_CLASSIFICATION",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/anet-20260930.htm",
+    "source_reference": "10-Q balance sheet p.1; financing cash flows p.5; Notes 1\u20138",
+    "snapshot_line": null,
+    "scope": "No separate funded borrowing line or debt issuance/repayment disclosed. Do not generalize to zero debt-like claims inside aggregated liabilities."
+  },
+  {
+    "id": "other_current_liabilities",
+    "value": 296.4,
+    "units": "USD millions",
+    "reporting_date": "2026-09-30",
+    "classification": "REPORTED",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/anet-20260930.htm",
+    "source_reference": "10-Q balance sheet p.1",
+    "snapshot_line": 132,
+    "scope": "Included in current NWC proxy; classify before any separate bridge deduction to avoid double counting."
+  },
+  {
+    "id": "other_long_term_liabilities",
+    "value": 358.1,
+    "units": "USD millions",
+    "reporting_date": "2026-09-30",
+    "classification": "REPORTED",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/anet-20260930.htm",
+    "source_reference": "10-Q balance sheet p.1",
+    "snapshot_line": 138,
+    "scope": "Aggregate, not a validated debt/lease/tax breakdown."
+  },
+  {
+    "id": "noncurrent_deferred_revenue",
+    "value": 1737.3,
+    "units": "USD millions",
+    "reporting_date": "2026-09-30",
+    "classification": "REPORTED",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/anet-20260930.htm",
+    "source_reference": "10-Q balance sheet p.1",
+    "snapshot_line": 136,
+    "scope": "Excluded from v1 current NWC; relevant alternative operating-financing classification."
+  },
+  {
+    "id": "supplier_deposits",
+    "value": 152.8,
+    "units": "USD millions",
+    "reporting_date": "2026-09-30",
+    "classification": "REPORTED",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/anet-20260930.htm",
+    "source_reference": "10-Q Note 4 p.10",
+    "snapshot_line": 540,
+    "scope": "Spans current and other assets; current-only allocation not disclosed here."
+  },
+  {
+    "id": "purchase_commitments",
+    "value": 11400,
+    "units": "USD millions",
+    "reporting_date": "2026-09-30",
+    "classification": "REPORTED",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/anet-20260930.htm",
+    "source_reference": "10-Q Note 4 p.10",
+    "snapshot_line": 538,
+    "scope": "Converted from reported $11.4 billion; ordinary operating commitments are not all an incremental debt deduction.",
+    "raw_source_token": "11.4",
+    "conversion_to_millions": 1000
+  },
+  {
+    "id": "deferred_cost_of_goods_sold",
+    "value": 1586.2,
+    "units": "USD millions",
+    "reporting_date": "2026-09-30",
+    "classification": "REPORTED",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/anet-20260930.htm",
+    "source_reference": "10-Q Note 3 p.9",
+    "snapshot_line": 480,
+    "scope": "Inside prepaid/current assets; do not add separately to NWC."
+  },
+  {
+    "id": "historical_operating_lease_payments",
+    "value": 90.5,
+    "units": "USD millions",
+    "reporting_date": "2025-12-31",
+    "classification": "REPORTED",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/anet-20251231.htm",
+    "source_reference": "2025 10-K Note 5 p.86 (PDF p.90)",
+    "snapshot_line": null,
+    "scope": "Undiscounted payments net of immaterial sublease income; NOT a September 2026 lease liability or present value."
+  },
+  {
+    "id": "other_assets",
+    "value": 899.2,
+    "units": "USD millions",
+    "reporting_date": "2026-09-30",
+    "classification": "REPORTED",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/anet-20260930.htm",
+    "source_reference": "10-Q balance sheet p.1; strategic investment discussion Item 2 p.17",
+    "snapshot_line": 122,
+    "scope": "Aggregate not entirely nonoperating; fair-value eligibility and overlap require a breakdown."
+  }
+]

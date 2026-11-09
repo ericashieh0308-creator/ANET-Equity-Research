@@ -1,0 +1,12 @@
+{
+  "status": "HYPOTHETICAL / NOT YET VALIDATED",
+  "valuation_reference_date": "2026-09-30",
+  "information_date_note": "Retrospective analysis using the 10-Q filed November 4, 2026; not an investable backtest as of September 30.",
+  "scenarios": {
+    "Base": {"q4_2026_revenue_yoy": 0.30, "growth_2027_2030": [0.20, 0.16, 0.12, 0.10], "gross_margin": 0.63, "opex_ratio": 0.19, "tax_rate": 0.22, "da_ratio": 0.009, "ppe_capex_ratio": 0.025, "intangible_reinvestment_ratio": 0.005, "nwc_ratio": 0.09, "wacc": 0.10, "terminal_growth": 0.03},
+    "Bull": {"q4_2026_revenue_yoy": 0.50, "growth_2027_2030": [0.28, 0.24, 0.20, 0.16], "gross_margin": 0.65, "opex_ratio": 0.18, "tax_rate": 0.22, "da_ratio": 0.009, "ppe_capex_ratio": 0.025, "intangible_reinvestment_ratio": 0.005, "nwc_ratio": 0.08, "wacc": 0.09, "terminal_growth": 0.035},
+    "Bear": {"q4_2026_revenue_yoy": 0.10, "growth_2027_2030": [0.10, 0.08, 0.06, 0.04], "gross_margin": 0.60, "opex_ratio": 0.22, "tax_rate": 0.22, "da_ratio": 0.009, "ppe_capex_ratio": 0.03, "intangible_reinvestment_ratio": 0.005, "nwc_ratio": 0.11, "wacc": 0.12, "terminal_growth": 0.02}
+  },
+  "sensitivity_wacc": [0.08, 0.09, 0.10, 0.11, 0.12],
+  "sensitivity_terminal_growth": [0.02, 0.025, 0.03, 0.035, 0.04]
+}
