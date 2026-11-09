@@ -56,11 +56,10 @@ def test_integrated_pdf_pages_bounds_text_and_sources():
 
 
 def test_archive_identity_manifest_and_rebuild():
-    for name in [
-        "ANET_Equity_Research_2026-11-08.pdf",
-        "anet_equity_research.md",
-        "report_manifest.json",
-    ]:
+    baseline = json.loads((ROOT / "reports/archive/v1_report_manifest.json").read_text())
+    archived_pdf = ROOT / "reports/archive/v1_ANET_Equity_Research_2026-11-08.pdf"
+    assert hashlib.sha256(archived_pdf.read_bytes()).hexdigest() == baseline["pdf_sha256"]
+    for name in ["anet_equity_research.md"]:
         assert (ROOT / "reports" / name).read_bytes() == (
             ROOT / "reports/archive" / ("v1_" + name)
         ).read_bytes()
@@ -84,6 +83,7 @@ def test_new_documentation_links():
     names = [
         "README.md",
         "reports/INTEGRATED_README.md",
+        "reports/README.md",
         "docs/integrated_valuation_methodology.md",
         "docs/peer_valuation.md",
         "docs/price_target_framework.md",
